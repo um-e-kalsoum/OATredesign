@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buffers - Resource Hub</title>
+  <title>Homology Searches - Resource Hub</title>
   <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
@@ -26,12 +26,143 @@
     <a href="../../index.html">Home</a> ›
     <a href="../../index.html#categories">Categories</a> ›
     <a href="dnaSequenceAnalysis.html">DNA Sequence Analysis</a> › 
-    <span>Alignments</span>
+    <span>Homology Searches</span>
     
   </div>
 
   <main class="content">
-    <h1>Alignments</h1>
+    <h1>Homology Searches</h1>
+    <h2>BLAST (Basic Local Alignment Search Tool) & FASTA</h2>
+    <p><strong>BACKGROUND INFORMATION:</strong>  The three BLAST programs that one will commonly use are BLASTN, BLASTP and BLASTX. BLASTN will compare your DNA sequence with all the DNA sequences in the nonredundant database (nr). BLASTP will compare your protein sequence with all the protein sequences in nr. In BLASTX your nucleotide sequence will be translated in all six reading frames and the products compared with the nr protein database. Several online tutorial are available including <a href = "https://www.ncbi.nlm.nih.gov/books/NBK1734/">BLAST QuickStart</a> and <a href = "https://ncbiinsights.ncbi.nlm.nih.gov/ncbi-outreach-events/">Basic Web BLAST</a> from NCBI and a <a href = "https://www.youtube.com/watch?v=HXEpBnUbAMo">YouTube video.</a></p>
+
+    <ul>
+      <li>
+        <a href = "https://blast.ncbi.nlm.nih.gov/Blast.cgi">BLAST Homepage</a> - (NCBI)
+        <ul>
+          <li>Nucleotide BLAST <a href = "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome">(BLASTN)</a> N.B. the default database is the "nucleotide collection (nt/nr)."  Comparatively recently NCBI offers the ability to conduct Batch BLAST searches.</li>
+          <li>Protein BLAST <a href = "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome">(BLASTP)</a> N.B. This program is also coupled with a motif search. If you suspect that your pprotein may only show weak sequence similarity to other proteins, I would suggest clicking on the  PSI-BLAST (Position-Specific Iterated BLAST) feature.  Since interpretation of the results requires scientific tact you might want to check the potential homologs using <a href = "https://asc-bioserv.asc.ohio-state.edu/sib-blast/">SIB-BLAST</a>.  SimpleIsBeautiful is a novel methodology that aims to improve the statistical assessment of hits returned from a PSI-BLAST search to yield better delineation of true and false positives.
+            <br>(<strong>Reference:</strong> Lee, M.M. et al. 2008. Bioinformatics 24:1339-1343).</li>
+          <li>Translated BLAST <a href = "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Translations&PROGRAM=blastx&BLAST_PROGRAMS=blastx&PAGE_TYPE=BlastSearch&SHOW_DEFAULTS=on">(BLASTX)</a> - runs an input DNA sequence againnst the protein databases.</li>
+          <li><a href = "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=tblastx&BLAST_PROGRAMS=tblastx&PAGE_TYPE=BlastSearch&SHOW_DEFAULTS=on&BLAST_SPEC=&LINK_LOC=blasttab&LAST_PAGE=tblastn">TBLASTX</a> searches translated nucleotide databases using a translated nucleotide query; while <a href = https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=tblastn&BLAST_PROGRAMS=tblastn&PAGE_TYPE=BlastSearch&SHOW_DEFAULTS=on&BLAST_SPEC=&LINK_LOC=blasttab&LAST_PAGE=tblastn">TBLASTN</a> searches translated nucleotide databases using a protein query. These are useful resources if you are interested in homologs in unfinished genomes. Under "Databases" select "genomic survey sequences", "High throughput genomic sequences" or "whole-genome shotgun reads"</li>
+          <li><a href = "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&BLAST_SPEC=MicrobialGenomes">Microbial Nucleotide BLAST</a> (BLASTN, TBLASTN, TBLASTX etc.).  Permits one to compare a nucleic acid or protein sequence against finished archaeal and bacterial genomes.</li>
+          <p><strong>N.B.</strong></p>
+          <ol>
+            <li> Depending upon the time of day your results may appear almost immediately or your search may be delayed or not accepted at all. Be prepared for plenty of results. You may only want to print the first few pages (e.g.1-5). Alternatively under "Algorithm Parameters" change the "Maximum targets" from 100 (default) to 10 or 50 .</li>
+            <li>For PSI-BLAST, and other searches I frequently enter information in the "Entrez Query" section e.g. Escherichia coli[organism] or Viruses[organism] to see "hits" specifically to E. coli or viruses/bacteriophages (see <a href = "https://blast.ncbi.nlm.nih.gov/doc/blast-topics/">here</a> for details)</li>
+            <li>It is adviseable to always select "Show results in a new window"</li>
+          </ol>
+        </ul>
+      </li>
+      <br>
+
+      <li><a href ="https://sky-blast.com/" >SkyBLAST</a> - is a new, lightning fast NCBI-BLAST web service offering the exact same results as the NIH website, but faster and less congested. SkyBLAST is an Australian-based start-up and launched in 2025.</li>
+      <br>
+
+      <li><a href = "https://www.ebi.ac.uk/jdispatcher/sss/ncbiblast">EMBL-EBI BLAST</a> - (European Molecular Biology network). Very convenient since it permits one to specifically search databases such as prokaryote, bacteriophage, fungal, & 16S rRNA  using BLASTN, and specific bacterial genomes or SwissProt using BLASTX or BLASTN.</li>
+      <br>
+      <li><a href = "https://phagesdb.org/">Actinobacteriophage Database</a>  (Graham Hatfull, U.S.A.)   -  allows BLASTN and BLASTP analyses against a growing list of  phages that infect bacterial hosts within the phylum Actinobacteria.</li>
+      <br>
+      <li><a href = "https://toolkit.tuebingen.mpg.de/tools/hhpred#/tools/hhpred">HHPred</a> Homology detection & structure prediction by HMM-HMM comparison - is a method for database searching and structure prediction that is as easy to use as BLAST but is much more sensitive in finding remote homologs. HHpred is the first server that is based on the pairwise comparison of profile hidden Markov models (HMMs). Whereas most conventional sequence search methods search sequence databases such as UniProt or the NR, HHpred searches alignment databases, like Pfam or SMART. This greatly simplifies the list of hits to a number of sequence families instead of a clutter of single sequences. HHpred accepts a single query sequence or a multiple alignment as input. 
+        <br>(<strong>Reference:</strong> Söding J et al. 2005. Nucl. Acids Res. 33, W244-W248 (Web Server issue))</li>
+      <br>
+      <li><a href = "https://www.ncbi.nlm.nih.gov/igblast/">IGBLAST</a> - can be used to analyze immunoglobulin (Ig) sequences and T cell receptor (TR) sequences</li>
+      <br>
+      <li><a href = "https://www.ncbi.nlm.nih.gov/tools/primer-blast/index.cgi?LINK_LOC=BlastHome">Primer-BLAST:</a>  Finding primers specific to your PCR template (using Primer3 and BLAST). </li>
+      <br>
+      <li><a href = "https://www.ncbi.nlm.nih.gov/tools/vecscreen/">VecScreen</a> is a system that quickly finds segments of a nucleic acid sequence that may be of vector origin. It helps researchers identify and remove any segments of vector origin before they analyze or submit sequences.</li>
+      <br>
+    </ul>
+
+    <h3>For more sophisticated studies you might want to employ:</h3>
+    <ul>
+      <li><a href = "https://blast.ncbi.nlm.nih.gov/Blast.cgi?ALIGNMENTS=250&ALIGNMENT_VIEW=Pairwise&CLIENT=web&COMPOSITION_BASED_STATISTICS=on&DATABASE=nr&DESCRIPTIONS=500&ENTREZ_QUERY=(none)&EXPECT=10&FORMAT_OBJECT=Alignment&FORMAT_TYPE=HTML&GAPCOSTS=11+1&HITLIST_SIZE=500&I_THRESH=0.002&MATRIX_NAME=BLOSUM62&NCBI_GI=on&PAGE=Proteins&PROGRAM=blastp&RUN_PSIBLAST=on&SERVICE=plain&SET_DEFAULTS.x=36&SET_DEFAULTS.y=5&SHOW_OVERVIEW=on&AUTO_FORMAT=yes&CDD_SEARCH=on&END_OF_HTTPGET=Yes">PSI-BLAST or PHI-BLAST or DELTA-BLAST</a> (Domain Enhanced Lookup Time Accelerated BLAST)  search - (NCBI) Position-Specific Iterative BLAST creates a profile after the initial search.  </li>
+      <br>
+      <li><a href = "https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&PROG_DEF=blastn&BLAST_PROG_DEF=megaBlast&SHOW_DEFAULTS=on&BLAST_SPEC=blast2seq&LINK_LOC=align2seq">Genome vs Genome BLAST</a> - (NCBI) BLAST two sequences against one another.  N.B. This utilizes BLASTN, P, X as well as TBLASTN and TBLASTX.</li>
+      <br>
+      <li><a href = "https://gecoviz.compgenomics.org/">GeCoViz</a> (Genome Context Vizualizer) -  this online resource was built upon reference prokaryotic genomes that provides fast and interactive visualisation of custom genomic regions anchored by any target gene, which can be sought by either name, orthologous group (KEGGs, eggNOGs), protein domain (PFAM) or sequence.  
+        <br>(<strong>Reference:</strong> Botas, J. et al. 2022. Nucl. Acids Res. 50: W352–W357).</li>
+            <div class="software-full-width-image">
+            <img src="../DNAsequenceAnalysis/pg5picsDNA/Gene_Context_Tool (1).png" alt="SnapGene software">
+            </div>
+            <br>      
+      <li><a href = "https://cinteny.cchmc.org/">Cinteny</a> - Server for Synteny Identification and Analysis of Genome Rearrangement using reversal distance as a measure. You may create a project and upload your own data by following the links below or work with pre-loaded data by selecting the genomes below 
+        <br>(<strong>Reference:</strong> Sinha, A.U. & Meller, J. 2007. BMC Bioinformatics 8: 82)</li>
+      <br>
+    </ul>
+
+    <h3>Other search engines include:</h3>
+    <ul>
+      <li><a href = "https://tcdb.org/">TC-BLAST</a> (Saier Laboratory Bioinformatics Grp, Univ. San Diego, U.S.A.) - Scans the transport protein database (TC-DB) producing alignments and phylogenetic trees.  The TC-DB details a comprehensive classification system for membrane transport proteins known as the Transport Commission (TC) system.</li>
+      <br>
+      <li><a href = "https://www.ebi.ac.uk/merops/">MEROPS BLAST</a> - permits one to screen protein sequences against an extensive database of characterized peptidases 
+        <br>(<strong>Reference:</strong> Rawlings, N.D et al. 2002. Nucleic Acids Res. 30: 343-346).</li>
+      <br>
+      <li><a href = "http://prodata.swmed.edu/compass/compass.php"></a>COMPASS - is a profile-based method for the detection of remote sequence similarity and the prediction of protein structure. The server features three major developments: (i) improved statistical accuracy; (ii) increased speed from parallel implementation; and (iii) new functional features facilitating structure prediction. These features include visualization tools that allow the user to quickly and effectively analyze specific local structural region predictions suggested by COMPASS alignments.
+        <br>(<strong>Reference:</strong> R.I. Sadreyev et al. 2009. Nucl. Acids Res. 37(Web Server issue:W90-W94))</li>
+      <br>
+      <li><a href = "http://ekhidna2.biocenter.helsinki.fi/cgi-bin/sans/sans.cgi">SANSparallel:</a> interactive homology search against Uniprot - the webserver provides protein sequence database searches with immediate response and professional alignment visualization by third-party software. The output is a list, pairwise alignment or stacked alignment of sequence-similar proteins from Uniprot, UniRef90/50, Swissprot or Protein Data Bank. The stacked alignments are viewed in Jalview or as sequence logos. The database search uses the suffix array neighborhood search (SANS) method, which has been re-implemented as a client-server, improved and parallelized. The method is extremely fast and as sensitive as BLAST above 50% sequence identity. 
+        <br>(<strong>Reference:</strong> P. Somervuo & L. Holm. 2015.  Nucl. Acids Res.  43 (W1): W24-W29).</li>
+      <br>
+    </ul>
+
+    <h3>Detect bacterial toxins through text and homology searches:</h3>
+    <ul>
+      <li><a href = "http://www.hpppi.iicb.res.in/btox/cgi-bin2/svm.cgi?name=svm">DBETH</a> Database of Bacterial ExoToxins for Human - is a database of sequences, structures, interaction networks and analytical results for 229 exotoxins from 26 different human pathogenic bacterial genera. All toxins are classified into 24 different Toxin classes. The aim of DBETH is to provide a comprehensive database for human pathogenic bacterial exotoxins. 
+        <br>(<strong>Reference:</strong> Chakraborty, A. et al. 2012. Nucl. Acids Res. 40(Database issue): D615-620).</li>
+      <br>
+    </ul>
+
+    <h2>Orthologous genes/proteins</h2>
+    <ul>
+      <p>COG analysis - <a href = "https://www.ncbi.nlm.nih.gov/research/cog">Clusters of Orthologous Groups</a>  -  COG protein database was generated by comparing predicted and known proteins in all completely sequenced microbial genomes to infer sets of orthologs. Each COG consists of a group of proteins found to be orthologous across at least three lineages and likely corresponds to an ancient conserved domain.  
+        <br>(<strong>Reference:</strong>  Galperinet MY al. 2025. Nucl. Acids Res. 53:  D356–D363).
+        <br>Sites which offer this analysis include:</p>
+      <br>
+      <li><a href = "https://rast.nmpdr.org/">RAST</a> 
+        <br>(<strong>Reference:</strong> Aziz RK et al. 2008. BMC Genomics 9:75),  
+        and <a href = "https://img.jgi.doe.gov/">JGI IMG</a> (Integrated Microbial Genomes; 
+        <br>(<strong>Reference:</strong> Markowitz VM et al. 2014. Nucl. Acids Res. 42: D560-D567).</li>
+      <br>
+    </ul>
+
+    <h3>Other sites:</h3>
+    <ul>
+      <li><a href = "http://eggnog5.embl.de/#/app/home">EggNOG</a> - A database of orthologous groups and functional annotation that derives Nonsupervised Orthologous Groups (NOGs) from complete genomes, and then applies a comprehensive characterization and analysis pipeline to the resulting gene families. 
+        <br>(<strong>Reference:</strong> Powell S et al. 2014. Nucleic Acids Res. 42 (D1): D231-D239) </li>
+      <br>
+      <li><a href = "https://orthomcl.org/orthomcl/app">OrthoMCL</a> -  is a genome-scale algorithm for grouping orthologous protein sequences. Such orthologous sequences not only share evolutionary history, but also share function. Thus, ortholog prediction is important in predicting the function of newly identified proteins..
+        <br>(<strong>Reference:</strong> Fischer S et al. 2011. Curr Protoc Bioinformatics; Chapter 6:Unit 6.12.1-19).</li>
+      <br>
+      <li><a href = "https://www.genome.jp/tools/kaas/">KAAS</a> (KEGG Automatic Annotation Server) provides functional annotation of genes by BLAST or GHOST comparisons against the manually curated KEGG GENES database. The result contains KO (KEGG Orthology) assignments and automatically generated KEGG pathways. 
+        <br>(<strong>Reference:</strong> Moriya Y et al. 2007. Nucleic Acids Res. 35(Web Server issue):W182-185).</li>
+      <br>
+    </ul>
+
+    <h3>Unique search engine:</h3>
+    <ul>
+      <li><a href = "https://inga.bio.unipd.it/">INGA 2.0 </a>- exploits homology, domain architecture, interaction networks and information from the ‘dark proteome’, like transmembrane and intrinsically disordered regions, to generate a consensus prediction. INGA was ranked in the top ten methods on both CAFA2 and CAFA3 blind tests. 
+        <br>(<strong>Reference:</strong> Piovesan D &  Tosatto SCE (2019) Nucleic Acids Res 47(W1):  W373–W378).</li>
+      <br>
+    </ul>
+
+    <h3>Comparison of homology between two small genomes:</h3>
+    <ul>
+      <li><a href = "https://kablammo.wasmuthlab.org/">Kablammo</a> helps you create interactive visualizations of BLAST results from your web browser. Find your most interesting alignments, list detailed parametersfor each, and export a publication-ready vector image. Incredibly easy to use - here are the results for a BLASTN comparison to Escherichia phages T1 (query)and ADB-2. 
+        <br>(<strong>Reference:</strong> Wintersinger JA et al. Bioinformatics 31:1305-1306).</li>
+            <div class="software-full-width-image">
+            <img src="../DNAsequenceAnalysis/pg5picsDNA/Kablammo..jpg" alt="SnapGene software">
+            </div>
+            <br>       
+      <li><a href = "http://pipmaker.bx.psu.edu/cgi-bin/pipmaker?advanced">Advanced PipMaker</a> (Schwartz et al. <a href = "http://pipmaker.bx.psu.edu/pipmaker/papers/genome-research/">Genome Research</a> Vol. 10, Issue 4, 577-586, April 2000) aligns two DNA sequences and returns a percent identity plot of that alignment, together with a traditional textual form of the alignment.  You might want to download <a href = "https://globin.bx.psu.edu/globin/java/laj/">Laj</a> (Penn State - Bioinformatics Group, U.S.A.) for viewing and manipulating the output from pairwise alignment programs such as PipMaker representations of the alignments.</li>
+      <br>
+      <li><a href = "https://4virology.net/virology-ca-tools/jdotter/">JDotter</a> - is  a Java Dot Plot Viewer (Viral Bioinformatics Resource Center, University of Victoria, Canada) - a dot matrix plotter for Java.  Produces similar diagrams to the above mentioned programs, but with better control on output.</li>
+      <br>
+      <li><a href = "https://zpicture.dcode.org/">zPicture:</a> multiple sequence alignment tool (Comparative Genomics Center, Lawrence Livermore National Laboratory, U.S.A.) - provides nice dotplot graphs and dynamic visualizations. If simple gene locations are provided in the form (e.g. > 2000 5000 RNA_polymerase; indicates the the RNA polymerase gene is found on the plus strand between bases 2000 and 5000) this data will be added to the dynamic visualization. zPicture alignments can be automatically submitted to rVista to identify conserved transcription factor binding sites.  For more than two genomes go <a href = "https://zpicture.dcode.org/multiz.php">here.</a></li>
+      <br>
+      <li>CoreGenes  (D. Seto,  Bioinformatics & Computational Biology, George Mason Univ., U.S.A.) is designed to analyze two to five genomes simultaneously, generating a table of related genes - orthologs and putative orthologs. These entries are linked to their GenBank data.  I have used this suite of programs extensively in the classification of bacterial viruses. It has proved exctremely useful in determining unique genes in comparisons between large Myoviridae.  <a href = "http://binf.gmu.edu:8080/CoreGenes3.5/BatchCoreGenes.html">CoreGenes 3.5</a> and <a href = "https://coregenes.ngrok.io/">CoreGenes 5.0</a> allow a greater number of comparisons.</li>
+      <br>
+    </ul>
+
 
     </section>
 

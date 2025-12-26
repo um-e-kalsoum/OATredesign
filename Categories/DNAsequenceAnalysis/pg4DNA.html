@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Convert Sequence - Resource Hub</title>
+  <title>DNA Motifs - Resource Hub</title>
   <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
@@ -26,42 +26,55 @@
     <a href="../../index.html">Home</a> ›
     <a href="../../index.html#categories">Categories</a> ›
     <a href="dnaSequenceAnalysis.html">DNA Sequence Analysis</a> › 
-    <span>Convert Sequence</span>
+    <span>DNA Motifs</span>
     
   </div>
 
   <main class="content">
-    <h1>Convert Sequence</h1>
+    <h1>DNA Motifs</h1>
 
-    <p>upper to low case, complement, reverse, RNA to DNA</p>
-    <p>Several sites are available for conversion of sequence from one format to another. These include:</p>
-
-    <ul>
-      <li><a href = #></a></li>
-        <br>
-    </ul>
-
-    <p></p>
+    <p>While one can use established lists of motifs to search one's DNA sequence one can also discover them directly. In order to do this one has to derive a consensus sequence or probability matrix.  In the case of bacterial proteins for which the binding sites have been determined good places to start are the  E. coli DNA-Binding Site Matrices (A.M. McGuire, Harvard University, U.S.A.), and, <a href = "">DBTBS:</a> a database of transcriptional regulation in Bacillus subtilis (University of Torkyo, Japan). The following sites provides one with a training set which can be used to derive a Gibbs screening matrix.</p>
+    <p>See additional pages on <a href = ""></a>Promoters, <a href = ""></a>Terminators, and <a href = ""></a>Transcriptional Factors.  Recent <a href = "https://www.ajmb.org/Article?id=10368">Review</a> of Different Sequence Motif Finding Algorithms 
+      <br>(<strong>Reference:</strong> Hashim FA et al. Avicenna J Med Biotechnol. 2019; 11(2):130-148).</p>
 
     <ul>
-      <li><a href = #></a></li>
+      <li><a href = "https://rsat.france-bioinformatique.fr/teaching/RSAT_portal.html">RSAT</a> (Regulatory Sequence Analysis Tools) - is a suite of modular tools for the detection and the analysis of cis-regulatory elements in genome sequences. Its main applications are (i) motif discovery, including from genome-wide datasets like ChIP-seq/ATAC-seq, (ii) motif scanning, (iii) motif analysis (quality assessment, comparisons and clustering), (iv) analysis of regulatory variations, (v) comparative genomics. 
+        <br>(<strong>Reference:</strong> Santana-Garcia W et al. Nucleic Acids Res. 2022.  50(Web Server issue):W670–W676).   
+        <br>This provides links to the following specialized sites:</li>
+        <ul>
+          <li>RSAT Fungi</li>
+          <li>RSAT Prokaryotes</li>
+          <li>RSAT Metazoa</li>
+          <li>RSAT Protists</li>
+          <li>RSAT Plants</li>
+        </ul>
+        <p>You may also want to consider the <a href = "https://meme-suite.org/meme/">MEME Suite</a></p>
+  
+      <li><a href = "https://homes.esat.kuleuven.be/~sistawww/bioi/thijs/Work/MotifSampler.html">Motif Sampler</a> - tries to find over-represented motifs (cis-acting regulatory elements) in the upstream region of a set of co- regulated genes. This motif finding algorithm uses Gibbs sampling to find the position probability matrix that represents the motif. Be sure to "uncheck" the appropriate box if you don't want the complementary strand included in the analysis. 
+        <br>(<strong>Reference:</strong> Thijs G et al. 2002. J. Comput. Biol. 9: 447-464).</li>
         <br>
-        <li><a href = #></a></li>
+        <li><a href = "https://bammmotif.mpibpc.mpg.de/">BaMM</a> offers four tools: (i) de-novo discovery of enriched motifs in a set of nucleotide sequences, (ii) scanning a set of nucleotide sequences with motifs to find motif occurrences, (iii) searching with an input motif for similar motifs in our BaMM database with motifs for >1000 transcription factors, trained from the GTRD ChIP-seq database 
+          <br>(<strong>Reference:</strong> Kiesel A et al (2018) Nucleic Acids Research, 46: W215–W220)</li>
         <br>
-        <li><a href = #></a></li>
+        <li><a href = "http://www.benoslab.pitt.edu/stamp/">STAMP:</a> a web tool for exploring DNA-binding motif similarities 
+          <br>(<strong>Reference:</strong> Mahony S &  Benos PV. 2007. Nucl Acids Res. 35: W253–W258).</li>
         <br>
-        <li><a href = #></a></li>
+        <li><a href = "http://www.p2rp.org/">P2RP</a> (Predicted Prokaryotic Regulatory Proteins) - including transcription factors (TFs) and two-component systems (TCSs) based upon analysis of DNA or protein sequences. 
+          <br>(<strong>Reference:</strong> Barakat M., 2013. BMC Genomics 14: 269)</li>
         <br>
     </ul>
 
     <h2>Kmer Analysis</h2>
-    <p></p>
+    <p>K-mers are short DNA sequences (a  substring of length k) that are used for genome sequence analysis. Applications that use k-mers include genome assembly and alignment.</p>
     <ul>
-      <li><a href = #></a></li>
+      <li><a href = "https://cge.food.dtu.dk/services/KmerFinder/">KmerFinder 3.2</a> – predicts the species of bacteria from pre-assembled, complete or partial genomes, and short sequence reads. The prediction is based on the number of co-occurring k-mers (substrings of k nucleotides in DNA sequence data, in this case 16-mers) between the genomes of reference bacteria in a database and the genome provided by the user. 
+        <br>(<strong>Reference:</strong> Hasman H et al. 2013. J Clin Microbiol. 52:139-146)</li>
         <br>
-        <li><a href = #></a></li>
+        <li><a href = "http://kplogo.wi.mit.edu/">kpLogo</a> - motifs of only 1–4 letters can play important roles when present at key locations within macromolecules. Because existing motif-discovery tools typically miss these position-specific short motifs, we developed kpLogo, a probability-based logo tool for integrated detection and visualization of position-specific ultra-short motifs from a set of aligned sequences. 
+          <br>(<strong>Reference:</strong> X. Wu, & D.P. Bartel (2017) Nucleic Acids Res 45 (Issue W1): W534–W538)</li>
         <br>
-        <li><a href = #></a></li>
+        <li><a href = "https://kmerkeys.dgi-stanford.org/">KmerKeys:</a> a web resource for searching indexed genome assemblies and variants 
+          <br>(<strong>Reference:</strong> Pavlichin DS et al. (2017) Nucleic Acids Res 50 (Issue W1): W448–W453)</li>
         <br>
     </ul>
 
