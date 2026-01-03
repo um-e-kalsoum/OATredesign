@@ -33,108 +33,151 @@
   <main class="content">
     <h1>Protein Tertiary Structure</h1>
 
-    <p></p>
-    <p></p>
+    <p>Sites are offered for calculating and displaying the 3-D structure of oligosaccharides and proteins. With the two protein  analysis sites the query protein is compared with existing protein structures as revealed through homology analysis.</p>
+    <p>Background: "Principles of Protein Structure, Comparative Protein Modelling and Visualization" by N. Guex & M.C.  Peitsch (GlaxoWellcome, Switzerland) is <a href = "https://swissmodel.expasy.org/course/course-index.htm">here.</a> To obtain PDB coordinates for a protein of your interest, go to the <a href = "https://www.rcsb.org/">Protein Data Bank</a> or <a href = "https://www.ncbi.nlm.nih.gov/Structure/index.shtml">NCBI.</a></p>
 
+          <div class="software-full-width-image">
+            <img src="../proteinSequenceAnalysis/pg8picsProtein/image5.gif" alt="SnapGene software">
+            </div>
+            <br> 
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "https://alphafoldserver.com/welcome">AlphaFold Server</a> - is my  new favourite web-service that can generate highly accurate biomolecular structure predictions containing proteins, DNA, RNA, ligands, ions, and also model chemical modifications for proteins and nucleic acids in one platform. It’s powered by the newest AlphaFold 3 model.
+          <br>(<strong>Reference</strong>: Abramson, J et al. (2024) Nature 630(8016): 493-500).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://www.sbg.bio.ic.ac.uk/phyre2/html/page.cgi?id=index">PHYRE2.2</a> - Protein Homology/analogY Recognition Engine - this was my favourite site for the prediction of the 3D structure of proteins.  In each case I have used this site it has provide me with a model. Phyre2 uses the alignment of hidden Markov models via HHsearch to significantly improve accuracy of alignment and detection rate.  It also incorporates a new ab initio folding simulation called Poing to model regions of your proteins with no detectable homology. 
+          <br>(<strong>Reference</strong>: Kelley LA et al. Nature Protocols 10: 845-858 (2015)).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://falcon.ictbda.cn:89/">FALCON2</a> - is a a web server that integrates ProALIGN and ProFOLD to provide high-quality protein structure prediction service. For a target protein, FALCON2 executes ProALIGN and ProFOLD simultaneously to predict possible structures and selects the most likely one as the final prediction result. We evaluated FALCON2 on widely-used benchmarks, including 104 CASP13 (the 13th Critical Assessment of protein Structure Prediction) targets and 91 CASP14 targets. In-depth examination suggests that when high-quality templates are available, ProALIGN is superior to ProFOLD and in other cases, ProFOLD shows better performance. By integrating these two approaches with different emphasis, FALCON2 server outperforms the two individual approaches and also achieves state-of-the-art performance compared with existing approaches 
+          <br>(<strong>Reference</strong>: Kong L et al. 2021. BMC Bioinformatics 22(1): 439).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://yanglab.nankai.edu.cn/trRosetta/">trRosetta</a> (transform-restrained Rosetta) - is a web-based platform for fast and accurate protein structure prediction, powered by deep learning and Rosetta. With the input of a protein’s amino acid sequence, a deep neural network is first used to predict the inter-residue geometries, including distance and orientations. The predicted geometries are then transformed as restraints to guide the structure prediction on the basis of direct energy minimization, which is implemented under the framework of Rosetta 
+          <br>(<strong>Reference</strong>: Du Z et al. 2021. Nature Protocols 16: 5634–5651)</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://cpclab.uni-duesseldorf.de/topsuite/">TopSuite</a> - is a web server for protein model quality assessment (TopScore) and template-based protein structure prediction (TopModel). TopScore provides meta-predictions for global and residue-wise model quality estimation using deep neural networks. TopModel predicts protein structures using a top-down consensus approach to aid the template selection and subsequently uses TopScore to refine and assess the predicted structures 
+          <br>(<strong>Reference</strong>: Mulnaea D et al. 2021. J Chem Inf Model. 61(2): 548-553).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://swissmodel.expasy.org/">SWISS-MODEL</a> - (Expasy web server, Switzerland)  An automated comparative protein modelling server which requries login 
+          <br>(<strong>Reference</strong>: Waterhouse A et al. 2018. Nucleic Acids Res. 46: W296-W303)</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://www.dsimb.inserm.fr/maintenance.html">ORION</a> - is a web server for protein fold recognition and structure prediction using evolutionary hybrid profiles. Various databases such as PDB, SCOP and HOMSTRAD can be mined to find an appropriate structural template. For the modeling step, a protein 3D structure can be directly obtained from the selected template by MODELLER and displayed with global and local quality model estimation measures. 
+          <br>(<strong>Reference</strong>: Ghouzam Y et al. (2016)  Scientific Reports 6: 28268).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://aideepmed.com/I-TASSER/">I-TASSER</a> -  (Iterative Threading ASSEmbly Refinement) - 3D models are built based on multiple-threading alignments by LOMETS and iterative TASSER simulations; function inslights are then derived by matching the predicted models with protein function databases. I-TASSER was ranked as the No 1 server for protein structure prediction in recent CASP7 and CASP8 experiments. 
+          <br>(<strong>Reference</strong>: A. Roy et al. 2010. Nature Protocols 5: 725-738)</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://robetta.bakerlab.org/">Robetta</a> - is a protein structure prediction service that is continually evaluated through CAMEO.  It features include an interactive submission interface that allows custom sequence alignments for homology modeling, constraints, local fragments, and more. It can model multi-chain complexes and provides the option for large scale sampling. It uses the PDB100 template database, which is updated weekly, a co-evolution based model database (MDB), and also provides the option for custom templates. 
+          <br>(<strong>Reference</strong>: Kim DE et al. (2004) Nucleic Acids Res; 32(Web Server issue): W526-531).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://bioserv.rpbs.univ-paris-diderot.fr/services/PEP-FOLD3/">PEP-FOLD 3</a> is a de novo approach aimed at predicting peptide structures from amino acid sequences. This method, based on structural alphabet SA letters to describe the conformations of four consecutive residues, couples the predicted series of SA letters to a greedy algorithm and a coarse-grained force field. 
+          <br>(<strong>Reference</strong>: Lamiable A, et al. Nucleic Acids Res. 2016; 44(W1): W449-54). </li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://proteinmodel.org/">AS2TS system</a> - offers a variety of resources for protein structural analysis using the LGA (local-global alignment) program to search for regions of local similarity and to evaluate the level of structural similarity between compared protein structures. To facilitate the homology-based protein structure modeling process, the AL2TS service translates given sequence–structure alignment data into the standard PDB coordinates 
+          <br>(<strong>Reference</strong>: A. Zemla et al. 2005. Nucl. Acids Res. 33: W111-W115).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://swift.cmbi.umcn.nl/servers/html/index.html">WHAT IF</a> Web Interface (Centre for Molecular and Biomolecular Informatics, University of Nijmegen, Holland) offers one a large number of tools for examining PDB files.</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://curie.utmb.edu/">InterProSurf</a>   - predicts interacting amino acid residues in proteins that are most likely to interact with other proteins, given the 3D structures of subunits of a protein complex. The prediction method is based on solvent accessible surface area of residues in the isolated subunits, a propensity scale for interface residues and a clustering algorithm to identify surface regions with residues of high interface propensities. 
+          <br>(<strong>Reference</strong>: S.S. Negi et al. 2007. Bioinformatics. 23: 3397-3399)</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://bioinf.cs.ucl.ac.uk/psipred/?disopred=1">PSIPRED</a> Protein Sequence Analysis Workbench - includes PSIPRED v3.3 (Predict Secondary Structure); DISOPRED3 & DISOPRED2 (Disorder Prediction); pGenTHREADER (Profile Based Fold Recognition); MEMSAT3 & MEMSAT-SVM (Membrane Helix Prediction); BioSerf v2.0 (Automated Homology Modelling); DomPred (Protein Domain Prediction); FFPred 3 (Eukaryotic Function Prediction); GenTHREADER (Rapid Fold Recognition); MEMPACK (SVM Prediction of TM Topology and Helix Packing)   pDomTHREADER (Fold Domain Recognition); and, DomSerf v2.0 (Automated Domain Modelling by Homology). 
+          <br>(<strong>Reference</strong>: Buchan DWA et al. 2013.  Nucl. Acids Res.  41 (W1): W340-W348).   </li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://toolkit.tuebingen.mpg.de/#/tools/modeller">MODELLER</a> - comparative protein  structure modelling by satisfaction od spacial constrains</li>
         <br>
     </ul>
 
     <h3>Structures derived from NMR coordinates:</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.cs23d.ca/index.php">CS23D2.0</a> - is a web server for rapidly generating accurate 3D protein structures using only assigned NMR chemical shifts as input. Unlike conventional NMR methods, which require NOE and/or J-coupling data, CS23D2.0 uses only chemical shift information to generate a 3D structure of the protein of interest. CS23D2.0 accepts chemical shift files in either SHIFTY or BMRB formats and produces a set of PDB coordinates for the protein in about 10-15 minutes. CS23D2.0 uses a combination of maximal subfragment assembly, chemical shift threading, shift-based torsion angle prediction and chemical shift refinement to generate and refine the protein coordinates. 
+          <br>(<strong>Reference</strong>:  Wishart DS et al. (2008) Nucleic Acids Res. 36(Web Server issue): W496-502).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.prosess.ca/">PROSESS</a> (Protein Structure Evaluation Suite & Server) - is a web server designed to evaluate and validate protein structures solved by either X-ray crystallography or NMR spectroscopy. PROSESS integrates a variety of previously developed, well-known and thoroughly tested methods to evaluate both global and residue-specific 
+          <br>(<strong>Reference</strong>: Berjanskii M et al (2010). Nucleic Acids Res. 38(Web Server issue): W633-640).</li>
         <br>
     </ul>
 
-    <p></p>
+    <p>Once you have a structure you will want to view it or superimpose it on other related molecules. To obtain PDB accession codes for a protein of your interest, go to the <a href = "https://www.rcsb.org/">Protein Data Bank</a></p>
 
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "https://www.rcsb.org/3d-view">Mol* 3D Viewer</a> 
+          <br>(<strong>Reference</strong>: Schnal D et al. 2021.  Nucleic Acids Res. 49(W1): W431-W437); 
+          <br><a href = "https://mmb.irbbarcelona.org/3dRS/launch">3dRS</a>  (3D Representation Sharing; 
+          <br>(<strong>Reference</strong>: Bayarri G et al. 2021 Front Mol Biosci 8: 726232); 
+          <br><a href = "http://jena3d.leibniz-fli.de/">Jena3D Viewer</a> (Institute of Molecular Biotechnology (IMB), Jena,  Germany); 
+          <a href = "https://www.biogem.org/tool/pdbms/">PDBms</a> 
+          <br>(<strong>Reference</strong>: Kumar TA. 2023. Interdisciplinary Sciences: Computational Life Sciences 15: 146–153); 
+          <br><a href = "http://www.sbg.bio.ic.ac.uk/ezmol/">EzMol</a> <br>(<strong>Reference</strong>: Reynolds CR et al. 2018. J Mol Biol 430(15): 2244-2248);</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://fatcat.godziklab.org/">FATCAT</a> (Flexible structure AlignmenT by Chaining Aligned fragment pairs allowing Twists) is an approach for flexible protein structure comparison. It simultaneously addresses the two major goals of flexible structure alignment; optimizing the alignment and minimizing the number of rigid-body movements (twists) around pivot points (hinges) introduced in the reference structure. 
+          <br>(<strong>Reference</strong>: Y.Ye & A. Godzik. (2003) Bioinformatics 19: suppl. 2. ii246-ii255). 
+          <br>This website provides access to a wide range of protein tools.</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://www.dsimb.inserm.fr/dsimb_tools/mulpba/index.php">MulPBA</a> (multiple Protein Block Alignment) - is a tool for comparison of protein structures based on similarity in the local backbone conformation. The local backbone conformation is defined as pentapeptide dihedrals 
+          <br>(<strong>Reference</strong>: Léonard S et al. (2014) J Biomol Struct Dyn. 32(4): 661-668).  </li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.softberry.com/berry.phtml?topic=3dmatch&group=programs&subgroup=3d-expl">3D-Match</a> - Comparing 3D structures of two proteins (Softberry)</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://www.dsimb.inserm.fr/maintenance.html">iPBA</a> - is a tool for comparison of protein structures based on similarity in the local backbone conformation. It presents an improved alignment approach using (i) specialized PB Substitution Matrices (SM) and (ii) anchor-based alignment methodology. 
+          <br>(<strong>Reference</strong>: Gelly, J.C. et al. 2011. Nucleic Acids Res. 39(Web Server issue):W18-23).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://www.dsimb.inserm.fr/maintenance.html">MAPSCI</a> Multiple Alignment of Protein Structures and Consensus Identification. The algorithm represents each protein as a sequence of triples of coordinates of the alpha-carbon atoms along the backbone. It then computes iteratively a sequence of transformation matrices (i.e., translations and rotations) to align the proteins in space and generate the consensus. The algorithm is a heuristic in that it computes an approximation to the optimal alignment that minimizes the sum of the pairwise distances between the consensus and the transformed protein. 
+          <br>(<strong>Reference</strong>: Ilinkin, I. et al. 2010. BMC Bioinformatics. 11:71).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://mspc.bii.a-star.edu.sg/minhn/reference_rclick.html">Rclick</a> -  this web server that is capable of superimposing RNA 3D structures by using clique matching and 3D least-squares fitting. Rclick has been benchmarked and compared with other popular servers and methods for RNA structural alignments. In most cases, Rclick alignments were better in terms of structure overlap. It also recognizes conformational changes between structures. 
+          <br>(<strong>Reference</strong>: Nguyen MN, & Verma C. 2015. Bioinformatics 31:966-968).</li>
         <br>
     </ul>
 
     <h3>Presentation of data:</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li>The <a href = "https://nglviewer.org/ngl/">NGL Viewer</a> is a web application for the visualization of macromolecular structures. By fully adopting capabilities of modern web browsers, such as WebGL, for molecular graphics, the viewer can interactively display large molecular complexes and is also unaffected by the retirement of third-party plug-ins like Flash and Java Applets. Beautiful output. 
+          <br>(<strong>Reference</strong>:  A.S. Rose & P.W. Hildebrand.  2015.  Nucl. Acids Res. 43 (W1): W576-W579).</li>
         <br>
     </ul>
 
     <h3>Predict Function from Structure:</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "https://cupsat.brenda-enzymes.org/">CUPSAT</a> - Cologne University Protein Stability Analysis Tool -  predicts changes in protein stability upon point mutations. The prediction model uses amino acid-atom potentials and torsion angle distribution to assess the amino acid environment of the mutation site. Additionally, the prediction model can distinguish the amino acid environment using its solvent accessibility and secondary structure specificity.  
+          <br>(<strong>Reference</strong>: Parthiban V, et al. (2006) Nucleic Acids Research, 34: W239-42).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://dokhlab.med.psu.edu/eris/login.php">Eris</a> - is a protein stability prediction server. This server calculates the change of the protein stability induced by mutations (ΔΔG) utilizing the recently developed Medusa modeling suite. In our test study, the ΔΔG values of a large dataset (>500) were calculated and compared with the experimental data and significant correlations are found. The correlation coefficients vary from 0.5 to 0.8. Eris also allows refinement of the protein structure when high-resolution structures are not available.  
+          <br>(<strong>Reference</strong>: Yin, F. et al. Nature Methods 4: 466-467; 2007). 
+          <br>Requires registration.</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://binf.gmu.edu/automute/">AUTO-MUTE</a> - AUTOmated server for predicting...functional consequences of amino acid MUTations in protEins - is a suite of programs measuring stability changes (ΔΔG, ΔΔGH2O, and ΔTm). 
+          <br>(<strong>Reference</strong>: Masso M. & Vaisman I.I. (2010) Protein Eng. Des. Sel. 23: 683-687).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://biosig.lab.uq.edu.au/duet/">DUET</a> - Protein Stability Change Upon Mutation - a web server for an integrated computational approach for studying missense mutations in proteins. DUET consolidates two complementary approaches (mCSM and SDM) in a consensus prediction, obtained by combining the results of the separate methods in an optimised predictor using Support Vector Machines (SVM). 
+          <br>(<strong>Reference</strong>: D.E.V. Pires et al. 2015. Nucl. Acids Res. 42(1): W314-W319)</li>
         <br>
     </ul>
 
     <h3>Pockets (active sites) in 3D structures of proteins:</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "https://projects.biotec.tu-dresden.de/metapocket/">metaPocket</a> - Identification of cavities on protein surface using multiple computational approaches for drug binding site prediction 
+          <br>(<strong>Reference</strong>: Zhang, Z. et al. 2011. Bioinformatics, 27: 2083-2088).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://altair.sci.hokudai.ac.jp/g6/service/pocasa/">POCASA</a> (POcket-CAvity Search Application) is an automatic program that implements the algorithm named Roll which can predict binding sites by detecting pockets and cavities of proteins of known 3D structure. 
+          <br>(<strong>Reference</strong>:  Yu, J. et al. 2010. Bioinformatics; 26: 46-52).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://bioserv.rpbs.univ-paris-diderot.fr/services/fpocket/">Fpocket suite</a> - three servers are available: (a) Fpocket: perform simple pocket detection; (b) MDpocket: track pockets in molecular dynamics; and, (c) Hpocket: view conserved pockets withing homologous proteins 
+          <br>(<strong>Reference</strong>: Schmidtke P et al. 2009. Nucleic Acids Res.10:168). </li>
         <br>
     </ul>
 
     <h3>Mutation and crystallization:</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "https://services.mbi.ucla.edu/SER/">SERp</a> Surface Entropy Reduction prediction - SERp is an exploratory tool to aid identification of sites that are most suitable for mutation designed to enhance crystallizability by a Surface Entropy Reduction approach. 
+          <br>(<strong>Reference</strong>: Goldschmidt L et al. 2007. Protein Sci. 16:1569-76).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://xtalpred.godziklab.orgxtalpred-cgi/xtal.pl">XtalPred</a> crystallizability classification is based on statistics on non-secreted wild-type microbial proteins and is optimized for identifying the most promising crystallization targets from large protein families. XtalPred is also helpful in construct design, although crystalizability class itself is usually not a sufficient criterion to find precise construct boundaries. 
+          <br>(<strong>Reference</strong>: Slabinski L et al. (2007) Bioinformatics. 23(24): 3403-3405).  </li>
         <br>
     </ul>
 
     <h3>Metasite:</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "https://scratch.proteomics.ics.uci.edu/">Scratch Protein Predictor</a> - (Institute for Genomics and Bioinformatics, University California, Irvine) - programs include: ACCpro: the relative solvent accessibility of protein residues; CMAPpro: Prediction of amino acid contact maps; COBEpro: Prediction of continuous B-cell epitopes; CONpro: predicts whether the number of contacts of each residue in a protein is above or below the average for that residue; DIpro: Prediction of disulphide bridges; DISpro: Prediction of disordered regions; DOMpro: Prediction of domains; SSpro: Prediction of protein secondary structure; SVMcon: Prediction of amino acid contact maps using Support Vector Machines; and, <a href = "https://scratch.proteomics.ics.uci.edu/">3Dpro</a>: Prediction of protein tertiary structure (Ab Initio).</li>
         <br>
     </ul>
 
