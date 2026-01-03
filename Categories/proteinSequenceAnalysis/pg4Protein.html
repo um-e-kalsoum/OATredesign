@@ -34,231 +34,307 @@
     <h1>Motifs: Using Databases & Creating Your Own</h1>
 
     <h2>Searching Motif Databases</h2>
-    <p></p>
+    <p><strong>Background Information</strong>: Proteins having related functions may not show overall high homology yet may contain sequences of amino acid residues that are highly conserved. For background information on this see <a href = "https://prosite.expasy.org/">PROSITE</a> at ExPASy. N.B. I recommend that you check your protein sequence with at least two different search engines.  Alternatively, use a meta site such as <a href = "https://www.genome.jp/tools/motif/">MOTIF</a> (GenomeNet, Institute for Chemical Research, Kyoto University, Japan) to simultaneously carry out Prosite, Blocks, ProDom, Prints and Pfam search</p>
 
     <h3>Several great sites including the first four which are meta sites:</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "https://myhits.isb-sib.ch/cgi-bin/motif_scan">Motif Scan</a> – (MyHits, SIB, Switzerland) includes Prosite, Pfam and HAMAP profiles.</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.ebi.ac.uk/interpro/">InterPro 5</a> - includes PROSITE, HAMAP (High-quality Automated and Manual Annotation of Proteins), Pfam (protein Families), PRINTS, ProDom, SMART (a Simple Modular Architecture Research Tool), TIGRFAMs, PIRSF (Protein Information Resource), SUPERFAMILY, CATH-Gene3D (Class, Architecture, Topology, Homologous superfamily), and PANTHER  (Protein ANalysis THrough Evolutionary Relationships) classification systems. 
+            <br>(<strong>Reference</strong>: Jones, P. et al. 2014, Bioinformatics 10: 1093). 
+            <br>This service is also available <a href = "http://129.175.105.74/genomics/lbmgeiprscan.html">here.</a></li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://www.genome.jp/tools/motif/">MOTIF</a> (GenomeNet, Japan) - I recommend this for the protein analysis, I have tried phage genomes against the DNA motif database without success. Offers 6 motif databases and the possibility of using your own.</li>
         <br>
-        <li><a href = ""></a>
+        <li><a href = "https://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml">CDD</a> or CD-Search (Conserved Domain Databases) - (NCBI) includes CDD, Smart,Pfam, PRK, TIGRFAM, COG and KOG  and is invoked when one uses BLASTP.</a>
             <ul>
-                <li><a href = ""></a></li>
+                <br>
+                <li><a href = "https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi">Batch Web CD-Search Tool</a> - The Batch CD-Search tool allows the computation and download of conserved domain annotation for large sets of protein queries. Input up to 100,000 protein query sequences as a list of sequence identifiers and/or raw sequence data, then download output in a variety of formats (including tab-delimited text files) or view the search results graphicallyOn the Batch CD-Search job summary page, a "Browse Results" button above the sample data table allows you to view the results graphically. The button opens a separate browser window that shows the domain footprints, alignment details, and conserved features on any individual query sequence. 
+                    <br>(<strong>Reference</strong>: Marchler-Bauer A et al. 2011. Nucleic Acids Res.39: (D)225-229.)</li>
                 <br>
             </ul>
         </li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://cdvist.zhulinlab.org/">CDvist</a> - Comprehensive Domain Visualization Tool - CDvist is a sequence-based protein domain search tool. It combines several popular algorithms to provide the best possible domain coverage for multi-domain proteins delivering speed-up, accuracy, and batch querying with novel visualization features.
+            <br>(<strong>Reference</strong>: O. Adebali et al.  Bioinformatics (2015) 31(9):1475-7). </li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://pfam.xfam.org/">Pfam</a>  - (EMBL-EBI) while for Batch Pfam searches go <a href="http://pfam.xfam.org/search#tabview=tab1">here</a> or <a href="https://www.genome.jp/tools/motif/">here</a>. 
+            <br>(<strong>Reference</strong>: Punta M et al. 2012.  Nucl. Acids Res.  40(Database issue): D290–D301).  
+            <br>One can access it also via the EBI site <a href = "https://www.ebi.ac.uk/Tools/hmmer/search/hmmscan">here</a>  which allows queries of Pfam, TIGRFAM, Gene3D, Superfamily, PIRSF, and TreeFam.</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://prosite.expasy.org/scanprosite/">ScanProsite</a> – (ExPASy) 
+            <br>(<strong>Reference</strong>:  Sigrist CJ et al. Nucleic Acids Res. 2013; 41(Database issue): D344-7).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://prodom.prabi.fr/prodom/current/html/form.php">ProDom</a> (Pôle Rhone-Alpin de BioInformatique, France) - is a comprehensive set of protein domain families automatically generated from the UniProt Knowledge Database</li>
         <br>
-        <li><a href = ""></a>
+        <li><a href = "https://smart.embl.de/smart/change_mode.cgi">SMART</a> Simple Modular Architecture Research Tool (EMBL, Universitat Heidelberg) - searches sequence for the domains/ sequences listed in the homepage.  Try selecting/deselecting the default settings.</li>
             <ul>
-                <li><a href = ""></a></li>
+                <br>
+                <li>Batch SMART scan - can be found <a href = "https://smart.embl.de/smart/batch.pl">here.</a> Please note that the software produces a polyprotein which it analyzes.  This can result in some difficulty in correlating the motifs which the individual proteins.  The same proviso applies to the Batch CD search.</li>
                 <br>
             </ul>
-        </li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://proteininformationresource.org/pirwww/dbinfo/iproclass.shtml">iProClass</a> (Protein Information Resource, Georgetown University Medical Centre, U.S.A.) - is an integrated resource that provides comprehensive family relationships and structural/functional features of proteins. 
+            <br>(<strong>Reference</strong>:   Wu CH et al. Comput. Biol. Chem. (2004) 28: 87–96).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://bioinf.cs.ucl.ac.uk/psipred/?disopred=1">PSIPRED Protein Sequence Analysis Workbench</a> - includes PSIPRED v3.3 (Predict Secondary Structure); DISOPRED3 & DISOPRED2 (Disorder Prediction); pGenTHREADER (Profile Based Fold Recognition); MEMSAT3 & MEMSAT-SVM (Membrane Helix Prediction); BioSerf v2.0 (Automated Homology Modelling); DomPred (Protein Domain Prediction); FFPred 3 (Eukaryotic Function Prediction); GenTHREADER (Rapid Fold Recognition); MEMPACK (SVM Prediction of TM Topology and Helix Packing)   pDomTHREADER (Fold Domain Recognition); and, DomSerf v2.0 (Automated Domain Modelling by Homology). 
+            <br>(<strong>Reference</strong>: Buchan DWA et al. 2013.  Nucl. Acids Res.  41 (W1): W340-W348).  </li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.p2rp.org/">P2RP</a> (Predicted Prokaryotic Regulatory Proteins) - including transcription factors (TFs) and two-component systems (TCSs) based upon analysis of DNA or protein sequences. 
+            <br>(<strong>Reference</strong>: Barakat M., 2013. BMC Genomics 14: 269)</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://www.ebi.ac.uk/merops/">MEROPS</a> - permits one to screen protein sequences against an extensive database of characterized peptidases 
+            <br>(<strong>Reference</strong>: Rawlings, N.D  et al. (2018) Nucleic Acids Res. 46: D624-D632).</li>
         <br>
     </ul>
 
     <h2>For specific protein modifications or site detection consult the following sites:</h2>
     <h3>Orthologous genes/proteins:</h3>
+    <p><strong>COG analysis</strong> - Clusters of Orthologous Groups  -  COG protein database was generated by comparing predicted and known proteins in all completely sequenced microbial genomes to infer sets of orthologs. Each COG consists of a group of proteins found to be orthologous across at least three lineages and likely corresponds to an ancient conserved domain (<a href = "http://clovr.org/docs/clusters-of-orthologous-groups-cogs/">CloVR</a>) .  Sites which offer this analysis include:</p>
     <ul>
-        <li><a href = ""></a></li>
-        <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://weizhong-lab.ucsd.edu/metagenomic-analysis/server/cog/">WebMGA</a> 
+            <br>(<strong>Reference</strong>: S. Wu et al. 2011. BMC Genomics 12:444), 
+            <br><a href = "https://rast.nmpdr.org/">RAST</a> 
+            <br>(<strong>Reference</strong>: Aziz RK et al. 2008. BMC Genomics 9:75),  
+            <br>and <a href = "https://www.basys.ca/">BASys</a> (Bacterial Annotation System; 
+            <br>(<strong>Reference</strong>: Van Domselaar GH et al. 2005. Nucleic Acids Res. 33(Web Server issue):W455-459.) 
+            <br>and <a href = "https://img.jgi.doe.gov/">JGI IMG</a> (Integrated Microbial Genomes; 
+            <br>(<strong>Reference</strong>: Markowitz VM et al. 2014. Nucl. Acids Res. 42: D560-D567. )</li>
         <br>
     </ul>
 
     <h3>Other Sites</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "http://eggnog5.embl.de/#/app/home">EggNOG</a> - A database of orthologous groups and functional annotation that derives Nonsupervised Orthologous Groups (NOGs) from complete genomes, and then applies a comprehensive characterization and analysis pipeline to the resulting gene families. 
+            <br>(<strong>Reference</strong>: Powell S et al. 2014.Nucleic Acids Res. 42 (D1): D231-D239) </li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://orthomcl.org/orthomcl/proteomeUpload.do">OrthoMCL</a> -  is another algorithm for grouping proteins into ortholog groups based on their sequence similarity. The process usually takes between 6  and 72 hours.
+            <br>(<strong>Reference</strong>: Fischer S et al. 2011. Curr Protoc Bioinformatics; Chapter 6:Unit 6.12.1-19).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://www.genome.jp/tools/kaas/">KAAS</a> (KEGG Automatic Annotation Server) provides functional annotation of genes by BLAST or GHOST comparisons against the manually curated KEGG GENES database. The result contains KO (KEGG Orthology) assignments and automatically generated KEGG pathways. 
+            <br>(<strong>Reference</strong>: Moriya Y et al. 2007. Nucleic Acids Res. 35(Web Server issue):W182-185).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://inparanoidb.sbc.su.se/cgi-bin/index.cgi">InParanoid</a> - this database provides a user interface to orthologs inferred by the InParanoid algorithm. As there are now international efforts to curate and standardize complete proteomes, we have switched to using these resources rather than gathering and curating the proteomes themselves. 
+            <br>(<strong>Reference</strong>: E.L.L. Sonnhammer & G. Östlund. 2015.  Nucl. Acids Res. 43 (D1): D234-D239).</li>
         <br>
     </ul>
 
     <h3>DNA binding - motifs:</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "https://users.cis.fiu.edu/~giri/bioinf/GYM2/welcome.html">GYM</a> - the most recent program for analysis of helix-turn-helix motifs in proteins.  N.B. the next site dates from 1990. 
+            <br>(<strong>Reference</strong>: Narasimhan, G. et al. 2002. J. Computational Biol. 9:707-720)</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://npsa-prabi.ibcp.fr/cgi-bin/npsa_automat.pl?page=/NPSA/npsa_hth.html">Helix-turn-Helix Motif Prediction</a> - (Institut de Biologie et Chemie des Proteines, Lyon, France)</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.jci-bioinfo.cn/iDNA-Prot">iDNA-Prot</a> - identifies DNA-binding proteins via the “grey model” and by adopting the random forest operation engine.The overall success rate by iDNA-Prot was 83.96%. One can submit up to 50 proteins. 
+            <br>(<strong>Reference</strong>: Lin W-Z et al. 2011. PLoS One 6: e24756). 
+            <br>Also available <a href = "http://www.jci-bioinfo.cn/iDNA-Prot">here.</a></li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://lcg.rit.albany.edu/dp-bind/">DP-Bind</a>: a web server for sequence-based prediction of DNA-binding residues in DNA-binding proteins.  Choose: PSSM-based encoding which is the most accurate, but the slowest. 
+            <br>(<strong>Reference</strong>: S.Hwang et al. 2007. Bioinformatics 23(5):634-636).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://crdd.osdd.net/raghava/dnabinder/">DNAbinder</a> - employs two approaches to predict DNA-binding proteins (a) amino acid composition which allows for multiple sequences in fasta format, and (b) PSSM (Position-specific scoring matrix) which can only screen a single protein at a time.  Choose the "Alternate dataset" if input sequence is full length protein, since the prediction will be done using SVM modules developed using full length protein sequences 
+            <br>(<strong>Reference</strong>: M. Kumar et al. 2007. BMC Bioinformatics 8: 463).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://biomine.cs.vcu.edu/server-handler/?type=servers&target=DRNApred/">DRNApred</a> - server provides sequence based prediction of DNA- and RNA-binding residues. 
+            <br>(<strong>Reference</strong>: Yan J, & Kurgan LA, 2017. Nucleic Acids Res. 45(10):e84).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://biomine.cs.vcu.edu/server-handler/?type=servers&target=DisoRDPbind/">DisoRDPbind</a> -  predicts the RNA-, DNA-, and protein-binding residues located in the intrinsically disordered regions. DisoRDPbind is implemented using a runtime-efficient multi-layered design that utilizes information extracted from physiochemical properties of amino acids, sequence complexity, putative secondary structure and disorder, and sequence alignment. 
+            <br>(<strong>Reference</strong>: Peng Z, & Kurgan LA, 2015.  Nucleic Acids Res. 43(18): e121).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li>If you know the three-dimensional structure of your protein then <a href = "https://3dfootprint.eead.csic.es/">3D-footprint</a>, <a href = "https://pipe.rcc.fsu.edu/displar.html">DISPLAR</a> 
+            <br>(<strong>Reference</strong>: Tjong G & Zhou H-X. 2007. Nucl. Acid Res.35: 1465-1477), 
+            <br><a href = "http://idbps.tau.ac.il/">iDBPs</a> 
+            <br>(<strong>Reference</strong>: Nimrod G. et al. 2009. J. Mol. Biol. 387: 1040-1053), 
+            <br><a href = "https://dnabind.szialab.org/">DNABIND</a> 
+            <br>(<strong>Reference</strong>: Szlagyi A & Skolnick J. 2006. J. Mol. Biol. 358: 922-933); 
+            <br>and, <a href = "http://www.prc.boun.edu.tr/appserv/prc/dnabindprot/index.html">DNABINDPROT</a> 
+            <br>(<strong>Reference</strong>: Ozbek P et al. 2010. Nucl. Acids Res. 38: W417-423) 
+            <br>could be useful to you.</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://2zip.molgen.mpg.de/index.html">2ZIP</a> - is used to find leucine zipper motifs 
+            <br>(<strong>Reference</strong>:   Bornberg-Bauer,E. et al. (1998) Nucleic Acids Res. 26:2740-2746).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.cbs.dtu.dk/">FeatureP</a> - is a web server which launches a selection of such predictors and mines their outputs for differential predictions, i.e. features which are predicted to be modified as a consequence of the differences between the input sequences. 
+            <br>(<strong>Reference</strong>: Blicher T et al. (2010) Curr Opin Struct Biol. 20: 335-41).  
+            <br>Can be used to screen multiple proteins.</li>
         <br>
     </ul>
 
     <h3>Two-component and other regulatory proteins:</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.p2rp.org/">P2RP</a> (Predicted Prokaryotic Regulatory Proteins) - users can input amino acid or genomic DNA sequences, and predicted proteins therein are scanned for the possession of DNA-binding domains and/or two-component system domains. RPs identified in this manner are categorised into families, unambiguously annotated. 
+            <br>(<strong>Reference</strong>: Barakat M, et al. 2013. BMC Genomics 14:269).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.p2cs.org/">P2CS</a> (Prokaryotic 2-Component Systems) is a comprehensive resource for the analysis of Prokaryotic Two-Component Systems (TCSs). TCSs are comprised of a receptor histidine kinase (HK) and a partner response regulator (RR) and control important prokaryotic behaviors.  It can be searched using BLASTP. 
+            <br>(<strong>Reference</strong>: P. Ortet et al. 2015.  Nucl. Acids Res. 43 (D1): D536-D541).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "">ECFfinder</a> - extracytoplasmic function (ECF) sigma factors - the largest group of alternative sigma factors - represent the third fundamental mechanism of bacterial signal transduction, with about six such regulators on average per bacterial genome. Together with their cognate anti-sigma factors, they represent a highly modular design that primarily facilitates transmembrane signal transduction. 
+            <br>(<strong>Reference</strong>: Staron A et al. (2009) Mol Microbiol 74(3): 557-581).</li>
         <br>
     </ul>
 
     <h3>Epitopes</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.badd-cao.net/seppa3/index.html">SEPPA 3.0</a> (Spatial Epitope Prediction of Protein Antigens) - B-cell epitope information is critical to immune therapy and vaccine design. Protein epitopes can be significantly affected by glycosylation, which SEPA can identify. 
+            <br>(<strong>Reference</strong>: Zhou C et al. 2019. Nucleic Acids Res. 47(W1): W388–W394). </li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.cbs.dtu.dk/services/BepiPred/">BepiPred</a> - this server predicts the location of linear B-cell epitopes using a combination of a hidden Markov model and a propensity scale method. 
+            <br>(<strong>Reference</strong>: Pontoppidan Larsen, J.E. et al. 2006. Immunome Research 2:2).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://crdd.osdd.net/raghava/abcpred/">ABCpred</a> - this server predicts B cell epitope(s) in an antigen sequence, using artificial neural network. 
+            <br>(<strong>Reference</strong>: Saha, S & Raghava G.P.S. 2006. Proteins 65:40-48).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://tools.immuneepitope.org/bcell/">Antibody Epitope Prediction</a> (Immune Epitope Database and Analysis Resource) - methods include Chou & Fasman Beta-Turn Prediction, Emini Surface Accessibility Prediction, Karplus & Schulz Flexibility Prediction, Kolaskar & Tongaonkar Antigenicity, Parker Hydrophilicity Prediction and Bepipred Linear Epitope Prediction</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://ailab.ist.psu.edu/bcpred/">BCPREDS</a> server allows users to choose the method for predicting B-cell epitopes among several developed prediction methods: AAP method, BCPred and FBCPred. Users provide an antigen sequence and optionally can specify desired epitope length and specificity threshold. Results are returned in several user-friendly formats. 
+            <br>(<strong>Reference</strong>: EL-Manzalawy, Y. et al. 2008. J Mol Recognit 21: 243-255).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://ailab.cs.iastate.edu/bcpreds/predict.html">EpiSearch</a>: Mapping of Conformational Epitopes 
+            <br>(<strong>Reference</strong>: Negi, S.S. & Braun, W. 2009. Bioinform. Biol. Insights 3: 71-81).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://ailab.cs.iastate.edu/bcpreds/predict.html">CEP</a> - Conformational Epitope Prediction Server - The algorithm, apart from predicting conformational epitopes, also predicts antigenic determinants and sequential epi-topes. The epitopes are predicted using 3D structure data of protein antigens, which can be visualized graphically. The algorithm employs structure-based Bioinformatics approach and solvent accessibility of amino acids in an explicit manner. Accuracy of the algorithm was found to be 75% when evaluated using X-ray crystal structures of Ag–Ab complexes available in the PDB.
+            <br>(<strong>Reference</strong>: Kulkarni-Kale, U. et al. 2005. Nucl. Acids Res. 33: W168–W171)</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.iedb.org/">IEDB</a> (Immune Epitope Database and Analysis Resource).  Includes T Cell Epitope Prediction (Scan an antigen sequence for amino acid patterns indicative of: MHC I Binding, MHC II Binding, MHC I Processing (Proteasome,TAP), MHC I Immunogenicity); B Cell Epitope Prediction, Predict linear B cell epitopes using: Antigen Sequence Properties, Predict discontinuous B cell epitopes using antigen structure via: Solvent-accessibility (Discotope), Protrusion (ElliPro). 
+            <br>(<strong>Reference</strong>: Vita, R. et al. 2015. Nucl. Acids Res. 43 (D1): D405-D412).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://webclu.bio.wzw.tum.de/expitope/">Expitope</a> - is the first web server for assessing epitope sharing when designing new potential lead targets. It enables the users to find all known proteins containing their peptide of interest. The web server returns not only exact matches, but also approximate ones, allowing a number of mismatches of the users choice. For the identified candidate proteins the expression values in various healthy tissues, representing all vital human organs, are extracted from RNA Sequencing (RNA-Seq) data as well as from some cancer tissues as control. 
+            <br>(<strong>Reference</strong>: Haase K et al. 2015. Bioinformatics 31: 1854-1856).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.epitoolkit.de/">EpiToolKit</a> -  provides a collection of methods from computational immunology for the development of novel epitope-based vaccines including HLA ligand or potential T-Cell epitope prediction, an epitope selection framework for vaccine design, and a method to design optimal string-of-beads vaccines. Additionally, EpiToolKit provides several other tools ranging from HLA typing based on NGS data, to prediction of polymorphic peptides. 
+            <br>(<strong>Reference</strong>: Schubert B et al. 2015. Bioinformatics 31: 2211-2213).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://projects.biotec.tu-dresden.de/metapocket/">MetaPocket 2.0</a> is a meta server to identify ligand binding sites on protein surface! metaPocket is a consensus method, in which the predicted binding sites from eight methods: LIGSITEcs, PASS, Q-SiteFinder, SURFNET, Fpocket, GHECOM, ConCavity and POCASA are combined together to improve the prediction success rate. 
+            <br>(<strong>Reference</strong>:  Bingding Huang (2009) Omics, 13(4): 325-330)</li>
         <br>
     </ul>
 
     <h3>Post-translational modification</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "https://proteomescout.wustl.edu/">ProteomeScout</a> is a database of proteins and post-translational modifications. There are two main data types in ProteomeScout: 1) Proteins: Visualize proteins or annotate your own proteins; and, 2) Experiments: You can load a new experiment or browse and analyze an existing experiment. Requires registration 
+            <br>(<strong>Reference</strong>: M.K. Matlock et al. 2015.  Nucl. Acids Res. 43 (D1): D521-D530).</li>
         <br>
     </ul>
 
     <h3>Glycosylation:</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.cbs.dtu.dk/services/NetOGlyc/">NetOGlyc</a> (Center for Biological Sequence Analysis, Technical University of Denmark) - produces neural network predictions of mucin type GalNAc O-glycosylation sites in mammalian proteins. SignalP is automatically run on all sequences. A warning is displayed if a signal peptide is not detected. In transmembrane proteins, only extracellular domains may be O-glycosylated with mucin-type GalNAc.</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.cbs.dtu.dk/services/NetNGlyc/">NetNGlyc</a> (Center for Biological Sequence Analysis, Technical University of Denmark) - predicts N-Glycosylation sites in human proteins using artificial neural networks that examine the sequence context of Asn-Xaa-Ser /Thr sequons.</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.cbs.dtu.dk/services/YinOYang/">YinOYang</a> (Center for Biological Sequence Analysis, Technical University of Denmark) - produces neural network predictions for O-ß-GlcNAc attachment sites in eukaryotic protein sequences. This server can also use NetPhos, to mark possible phosphorylated sites and hence identify "Yin-Yang" sites.</li>
         <br>
     </ul>
 
     <h3>Fatty acylation:</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.cbs.dtu.dk/services/LipoP/">LipoP 1.0</a> (Center for Biological Sequence Analysis Technical University of Denmark) - allows prediction of where signal peptidases I & II cleavage sites from Gram negative bacteria will cleave a protein. </li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://mendel.imp.ac.at/myristate/SUPLpredictor.htm">NMT - The MYR Predictor</a> (IMP [Research Institute of Molecular Pathology] Bioinformatics Group, Austria) - predicts N-terminal N-myristoylation. Generally, the enzyme NMT requires an N-terminal glycine (leading methionines are cleaved prior to myristoylation). However, also internal glycines may become N-terminal as a result of proteolytic processing of proproteins.</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://web.expasy.org/myristoylator/">Myristoylator</a> (ExPASy, Switzerland) - predicts N-terminal myristoylation of proteins by neural networks. Only N-terminal glycines are myristoylated (leading methionines are cleaved prior to myristoylation).</li>
         <br>
     </ul>
 
     <h3>Nucleotide binding sites:</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "https://biomine.cs.vcu.edu/server-handler/?type=servers&target=NsitePred/">nSITEpred</a> - is designed for sequence-based prediction of binding residues for ATP, ADP, AMP, GDP, and GTP 
+            <br>(<strong>Reference</strong>: K. Chen 2012. Bioinformatics 28: 331-341)</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.p2rp.org/">P2RP</a> (Predicted Prokaryotic Regulatory Proteins) - users can input amino acid or genomic DNA sequences, and predicted proteins therein are scanned for the possession of DNA-binding domains and/or two-component system domains. RPs identified in this manner are categorised into families, unambiguously annotated. 
+            <br>(<strong>Reference</strong>: Barakat M, et al. 2013. BMC Genomics 14:269).</li>
         <br>
     </ul>
 
     <h3>Phosphorylation:</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "http://csbl.bmb.uga.edu/~ffzhou/gps_web/predict.php">GPS</a> (Group-based Phosphorylation Scoring method) - prediction encompases 71 Protein Kinase (PK) families/PK groups 
+            <br>(<strong>Reference</strong>: Y. Xue et al. 2005. Nucl. Acids Res. 33: W184-W187).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.cbs.dtu.dk/services/NetPhos/">NetPhos</a> (Center for Biological Sequence Analysis, Technical University of Denmark) - predicts Ser, Thr and Tyr phosphorylation sites in eukaryotic proteins.</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://www.phosphosite.org/homeAction.action">PhosphoSitePlus</a> (PSP) is an online systems biology resource providing comprehensive information and tools for the study of protein post-translational modifications (PTMs) including phosphorylation, ubiquitination, acetylation and methylation. 
+            <br>(<strong>Reference</strong>: Hornbeck PV, et al. 2015 Nucleic Acids Res. 43: D512-520).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.compbio.dundee.ac.uk/1433pred">14-3-3-Pred</a>: A webserver to predict 14-3-3-binding phosphosites in human proteins 
+            <br>(<strong>Reference</strong>: Madeira F et al. 2015. Bioinformatics 31: 2276-2283).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://scansite4.mit.edu/4.0/#home">Scansite</a> searches for motifs within proteins that are likely to be phosphorylated by specific protein kinases or bind to domains such as SH2 domains, 14-3-3 domains or PDZ domains. Putative protein phosphorylation sites can be further investigated by evaluating evolutionary conservation of the site sequence or subcellular colocalization of protein and kinase.</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://quokka.erc.monash.edu/">Quokka</a> - is a comprehensive tool for rapid and accurate prediction of kinase family-specific phosphorylation sites in the human proteome 
+            <br>(<strong>Reference</strong>: Li F et al (Bioinformatics 34(24): 4223–4231)). </li>
         <br>
     </ul>
 
     <h3>Sumoylation:</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "http://predictor.nchu.edu.tw/SUMOgo/">SUMOgo</a> - prediction of sumoylation sites (small ubiquitin-like modifier (SUMO) binding (referred to as SUMOylation)) on lysines by motif screening models and the effects of various post-translational modifications 
+            <br>(<strong>Reference</strong>: Chang C-C et al. 2018. Scientific Reports 8: 15512).</li>
         <br>
     </ul>
 
     <h3>Sulfation:</h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "https://web.expasy.org/sulfinator/">Sulfinator</a>  (ExPASy, Switzerland) predicts tyrosine sulfation sites in protein sequences.</li>
         <br>
     </ul>
 
     <h3>Vaccine development, effector molecules: </h3>
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "http://117.211.115.67/vaccine/home.html">Jenner-predict</a> - Prediction of Protein Vaccine Candidates - submit your own sequence or select from a huge array of bacterial genomes 
+        <br>(<strong>Reference</strong>: Jaiswal V et al. 2013. BMC Bioinformatics;14: 211).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://effectors.csb.univie.ac.at/">Effective</a> (University of Vienna, Austria & Technical University of Munich, Germany) - Bacterial protein secretion is the key virulence mechanism of symbiotic and pathogenic bacteria. Thereby effector proteins are transported from the bacterial cytosol into the extracellular medium or directly into the eukaryotic host cell. The Effective portal provides precalculated predictions on bacterial effectors in all publicly available pathogenic and symbiontic genomes as well as the possibility for the user to predict effectors in own protein sequence data.</li>
         <br>
     </ul>
 
     <h2>Discover Your Own Motifs:</h2>
-    <p></p>
+    <p>After you have discovered similar sequences but the motif searching tools have failed to recognize your group of proteins you can use the following tools to create a list of potential motifs.</p>
 
     <ul>
-        <li><a href = ""></a></li>
-        <br>
+        <li><a href = "http://meme-suite.org/">The MEME Suite</a> - Motif-based sequence analysis tools    (National Biomedical Computation Resource, U.S.A.). N.B. After doing a BLASTP search create a FASTA-formated document containing three or four of the most homologous proteins (training set) and submit to <a href = "http://meme-suite.org/tools/meme">MEME</a> (Multiple Em for Motif Elicitation) or <a href = "http://meme-suite.org/tools/glam2">GLAM2</a> (Gapped Local Alignments of Motifs).  In the case of MEME I usually specify 5 as the "Maximum number of motifs" to find. You will receive a message by E-mail entitled "MEME Submission Information (job app......)," verifies that the NBCR received and is processing your request.  If you click on the hyperlink "You can view your job results at: http://meme..." you will see:</li>
+            <div class="software-full-width-image">
+            <img src="../proteinSequenceAnalysis/pg4picsProtein/Meme_Mast.jpg" alt="SnapGene software">
+            </div>
+            <br> 
 
-        <p></p>
-        <p></p>
-        <p></p>
+        <p>The "MAST output as HTML" provides the motifs, a motif alignment graphic and the alignment of the motifs with the individual sequences in the training set. The "MEME output as HTML" file contains a detailed analysis of each of the motifs plus their Sequence Logos. </p>
+        <p>At the top of the life is a buttom labelled "Search sequence databases for the best combined matches with these motifs using MAST."  This will take you to theMAST (Motif Alignment and Search Tool) submission form. Click on the NCBI nonredundant protein database.  You will receive an E-mail entitled "MAST Submission Information (job app ...)."</p>
+        <p>Use great caution before printing the second set of data can be >20 pages 
+        (<strong>Reference</strong>: Bailey, T.L. et al. 2009. Nucl. Acids Res. 37(Web Server issue): W202-W208).  The Meme Suite can also be found <a href = "http://tools.genouest.org/tools/meme/">here.</a></p>
 
-        <li><a href = ""></a></li>
+        <li><a href = "http://weblogo.berkeley.edu/logo.cgi">WebLogo</a> - a great graphical way of representing and visualizing consensus sequence data developed by Tom Schneider and Mike Stephens.  For nucleotide logos see <a href = "http://www.cbs.dtu.dk/~gorodkin/appl/slogo.html">RNA Structure Logo</a> (The Technical University of Denmark)</li>
+            <div class="software-full-width-image">
+            <img src="../proteinSequenceAnalysis/pg4picsProtein/thumbnail_5FB8E633-E82E-4F95-ABAE-6A2BDA2A060F.jpg" alt="SnapGene software">
+            </div>
+            <br> 
+        <li><a href = "http://www.cbs.dtu.dk/biotools/Seq2Logo/">Seq2Logo</a> is a sequence logo generator. Sequence logos are a graphical representation of the information content stored in a multiple sequence alignment (MSA) and provide a compact and highly intuitive representation of the position-specific amino acid composition of binding motifs, active sites, etc. in biological sequences.
+            <br>(<strong>Reference</strong>: Thomsen, M.C., & Nielsen, M. 2012. Nucleic Acids Res. 40(Web Server issue):W281-287).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://skylign.org/">Skylign</a> is a tool for creating logos representing both sequence alignments and profile hidden Markov models. Submit to the form in order to produce (i) interactive logos for inclusion in webpages, or (ii) static logos for use in documents.  Skylign accepts sequence alignments in any format accepted by HMMER (this includes Stockholm and aligned fasta format). 
+            <br>(<strong>Reference</strong>: Wheeler TJ, et al. 2014. BMC Bioinformatics. 15: 7.).  
+            <br>The HMMER-formatted profile HMM files can be generated from an *.aln ClustalW file by pasting your ClustalW alignment (& title) into <a href = "https://npsa-prabi.ibcp.fr/cgi-bin/npsa_automat.pl?page=/NPSA/npsa_hmmbuild.html">HMMBUILD</a> (Pôle Bioinformatique Lyonnais, France) and use the output (saved as a *.hmm file) at Skylign.</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.twosamplelogo.org/cgi-bin/tsl/tsl.cgi">Two Sample Logo</a> - detects and displays statistically significant differences in position-specific symbol compositions between two sets of multiple sequence alignments. In a typical scenario, two groups of aligned sequences will share a common motif but will differ in their functional annotation. Also available as a Java tool. 
+            <br>(<strong>Reference</strong>: Vacic, V. et al. 2006. Bioinformatics 22: 1536-1537).</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "https://www.ebi.ac.uk/Tools/hmmer/home">HMMER website</a> -  provides access to the protein homology search algorithms found in the HMMER software suite. Since the first release of the website in 2011, the search repertoire has been expanded to include the iterative search algorithm, jackhmmer. 
+            <br>(<strong>Reference</strong>: R.D. Finn et al. 2015.  Nucl. Acids Res.  43 (W1): W30-W38).</li>
         <br>
-        <li><a href = ""></a></li>
-        <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://slim.icr.ac.uk/pssmsearch/">PSSMSearch</a> - is a web application to discover novel protein motifs (SLiMs, mORFs, miniMotifs) and PTM sites. PSSMSearch analyses proteomes for regions with significant similarity to a specificity determinant model built from a set of aligned functional peptides. Query peptides can be provided by the users or retrieved from the ELM database. Multiple scoring methods are available to build a position-specific scoring matrix (PSSM) describing the specificity determinant model and users can modify the model to add prior knowledge of specificity determinants through an interactive PSSM heatmap. 
+            <br>(<strong>Reference</strong>: Krystkowiak I et al. 2018. Nucleic Acids Res 46(W1): W235–W241).  </li>
         <br>
     </ul>
 
     <h2>Nucleic Acid Motifs</h2>
-    <p></p>
+    <p>(See also <a href = "../DNAsequenceAnalysis/pg4DNA.html">here</a>)</p>
 
     <ul>
-        <li><a href = ""></a></li>
+        <li><a href = "https://rfam.org/">Rfam</a> (Welcome Trust Sanger Institute, England) - permits one to analyze 2 kb of DNA for 36 structural or functional RNAs such as 5S rRNA, tRNA, tmRNA, group I & II catalytic introns, hammerhead ribozymes, signal recognition particles.</li>
         <br>
-        <li><a href = ""></a></li>
+        <li><a href = "http://www.p2rp.org/">P2RP</a> (Predicted Prokaryotic Regulatory Proteins) - including transcription factors (TFs) and two-component systems (TCSs) based upon analysis of DNA or protein sequences. 
+            <br>(<strong>Reference</strong>: Barakat M., 2013. BMC Genomics 14: 269)</li>
         <br>
     </ul>
 
