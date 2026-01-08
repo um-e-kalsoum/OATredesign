@@ -342,6 +342,48 @@ footer {
   letter-spacing: 0.3px;
 }
 
+#backToTop {
+  display: inline-block;
+  margin: 0 auto 25px auto;
+  padding: 12px 28px;
+  background-color: #52796f;
+  color: #f6f6f4;
+  border: 2px solid #cad2c5;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+#backToTop::before {
+  content: "↑";
+  margin-right: 6px;
+  font-size: 1.1rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #cad2c5;
+  color: #354f52;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#backToTop:hover::before {
+  transform: translateY(-2px);
+}
+
+#backToTop:active {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
 /* SEARCH BAR */
 .search-container {
   position: relative;
