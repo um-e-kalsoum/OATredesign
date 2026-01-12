@@ -707,12 +707,12 @@ footer {
 }
 
 .software-full-width-image img {
-  width: 100%;
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
   border-radius: 6px;
   object-fit: contain;
   display: block;
+  margin: 0 auto;
 }
 
 .software-text {
