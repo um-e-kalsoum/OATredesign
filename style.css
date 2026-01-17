@@ -4,7 +4,6 @@ body {
   margin: 0;
   background-color: #354f52;
   color: #f6f6f4;
-
 }
 
 /* HEADER */
@@ -97,11 +96,6 @@ nav ul li a:hover {
   margin-bottom: 15px;
 }
 
-.hero p {
-  color: #eaeae8;
-  font-size: 1.1rem;
-}
-
 .hero img {
   width: 400px;
   border-radius: 12px;
@@ -155,7 +149,7 @@ nav ul li a:hover {
 
 .about a,
 .about a:link {
-  color: #FFFF6E;
+  color: #ffff6e;
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: color 0.3s ease;
@@ -257,7 +251,7 @@ nav ul li a:hover {
 
 .content a:not(.pill),
 .content a:not(.pill):link {
-  color: #FFFF6E;
+  color: #ffff6e;
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: color 0.3s ease;
@@ -307,7 +301,7 @@ a:hover {
 /* TUTORIAL SECTION LINKS */
 .tutorial-section a,
 .tutorial-section a:link {
-  color: #FFFF6E;
+  color: #ffff6e;
   text-decoration: underline;
   text-underline-offset: 3px;
   font-weight: 600;
@@ -391,64 +385,6 @@ footer {
   margin-right: 40px;
 }
 
-#search-bar {
-  padding: 10px 16px;
-  border-radius: 25px;
-  border: 2px solid #cad2c5;
-  background-color: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-  font-size: 1rem;
-  outline: none;
-  transition: all 0.3s ease;
-  width: 220px;
-}
-
-#search-bar::placeholder {
-  color: #e0e0e0;
-}
-
-#search-bar:focus {
-  background-color: rgba(255, 255, 255, 0.25);
-  width: 260px;
-  border-color: #ffffff;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
-}
-
-/* SEARCH RESULTS */
-.search-results {
-  position: absolute;
-  right: 0;
-  top: 50px;
-  background-color: #2f3e40;
-  border: 1px solid #cad2c5;
-  border-radius: 8px;
-  width: 260px;
-  text-align: left;
-  max-height: 200px;
-  overflow-y: auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  z-index: 1000;
-}
-
-.search-results a {
-  display: block;
-  padding: 10px 15px;
-  color: #f6f6f4;
-  text-decoration: none;
-  font-size: 0.95rem;
-}
-
-.search-results a:hover {
-  background-color: #cad2c5;
-  color: #354f52;
-}
-
-.search-results p {
-  padding: 10px 15px;
-  color: #cad2c5;
-  font-size: 0.9rem;
-}
-
 .contact-section {
   margin-top: 4rem;
   display: flex;
@@ -485,21 +421,6 @@ footer {
   line-height: 1.6;
 }
 
-.contact-button {
-  display: inline-block;
-  padding: 0.7rem 1.5rem;
-  background-color: #88a29e;
-  color: #1f3b3b;
-  font-weight: bold;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.contact-button:hover {
-  background-color: #a7c5b9;
-}
-
 /* ABOUT US PAGE STYLES */
 .about-section {
   display: flex;
@@ -529,7 +450,9 @@ footer {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   border: 2px solid rgba(202, 210, 197, 0.3);
   display: block;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .about-photo img:hover {
@@ -550,7 +473,11 @@ footer {
   width: 320px;
   max-width: 100%;
   padding: 25px;
-  background: linear-gradient(135deg, rgba(202, 210, 197, 0.15) 0%, rgba(136, 162, 158, 0.15) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(202, 210, 197, 0.15) 0%,
+    rgba(136, 162, 158, 0.15) 100%
+  );
   border: 2px solid rgba(202, 210, 197, 0.4);
   border-left: 4px solid #88a29e;
   border-radius: 12px;
@@ -559,7 +486,11 @@ footer {
 }
 
 .achievements-box:hover {
-  background: linear-gradient(135deg, rgba(202, 210, 197, 0.2) 0%, rgba(136, 162, 158, 0.2) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(202, 210, 197, 0.2) 0%,
+    rgba(136, 162, 158, 0.2) 100%
+  );
   border-color: rgba(202, 210, 197, 0.5);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   transform: translateY(-3px);
@@ -650,15 +581,15 @@ footer {
 
 /* SEQUENCE BLOCK STYLES (for introInstructions.html) */
 .sequence-block {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(202, 210, 197, 0.3);
   border-left: 3px solid #88a29e;
   border-radius: 8px;
   padding: 15px 20px;
   margin: 15px 0 25px 0;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   font-size: 0.9rem;
-  color: #e6e6e4;
+  color: #ffffff;
   line-height: 1.6;
   overflow-x: auto;
   white-space: pre-wrap;
@@ -666,8 +597,8 @@ footer {
 }
 
 .sequence-block:hover {
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(202, 210, 197, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(202, 210, 197, 0.5);
 }
 
 /* SOFTWARE PAGE STYLES */
@@ -747,7 +678,7 @@ footer {
 }
 
 .software-image-placeholder img {
-  width: 140px;     /* adjust the size you want */
+  width: 140px; 
   height: auto;
   border-radius: 6px;
   object-fit: cover;
@@ -771,7 +702,6 @@ footer {
   border-radius: 6px !important;
 }
 
-/* Remove big Google branding padding */
 .gsc-control-cse {
   padding: 0 !important;
   background: transparent !important;
