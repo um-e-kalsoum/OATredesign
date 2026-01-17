@@ -10,7 +10,9 @@
 </head>
 <body>
   <header>
-    <div class="logo"><a href="../../../index.html">Resource Hub</a></div>
+    <div class="logo">
+      <a href="../../../index.html">Resource Hub</a>
+    </div>
     <nav>
       <ul>
         <li><a href="../../../index.html">Home</a></li>
@@ -36,39 +38,68 @@
 
     <ol>
       <li>
-        <p>The first step is to extract the proteins from the gbk file. For this I use <a href="http://genome2d.molgenrug.nl/g2d_tools_conversions.html" target="_blank">Genome2D</a> resulting in the following type of results for phage 4HA13 (locus tag AC4HA13):</p>
-        <pre><code>>AC4HA13_000
+        <p>
+          The first step is to extract the proteins from the gbk file. For this
+          I use
+          <a href="http://genome2d.molgenrug.nl/g2d_tools_conversions.html" target="_blank">Genome2D</a>
+          resulting in the following type of results for phage 4HA13 (locus tag
+          AC4HA13):
+        </p>
+
+        <pre class="sequence-block">
+>AC4HA13_000
 MKPNYVAIRKSKEAMFHRFIEAKRKAELEGKVVIKKKKNKKKNYNIFFFLLSR
+
 >AC4HA13_010
-MTYYDADLGLVMCESELSLEILDALDWEHELPKGEPQWGDDDYVYVAPTDEFDIPF</code></pre>
+MTYYDADLGLVMCESELSLEILDALDWEHELPKGEPQWGDDDYVYVAPTDEFDIPF</pre>
       </li>
-      <br>
+
       <li>
         <p>Copy and paste these into Notepad.</p>
       </li>
       <br>
+
       <li>
-        <p>Check for spurious characters and deleted them. I sometimes find quotation marks (").</p>
+        <p>
+          Check for spurious characters and deleted them. I sometimes find
+          quotation marks (").
+        </p>
       </li>
       <br>
+
       <li>
-        <p>Using the Replace feature of Notepad to replace >AC4HA13 with >gp|AC4HA13|AC4HA13_% giving:</p>
-        <pre><code>>gp|AC4HA13|AC4HA13_%000
+        <p>
+          Using the Replace feature of Notepad to replace >AC4HA13 with
+          >gp|AC4HA13|AC4HA13_% giving:
+        </p>
+
+        <pre class="sequence-block">
+>gp|AC4HA13|AC4HA13_%000
 MKPNYVAIRKSKEAMFHRFIEAKRKAELEGKVVIKKKKNKKKNYNIFFFLLSR
+
 >gp|AC4HA13|AC4HA13_%010
-MTYYDADLGLVMCESELSLEILDALDWEHELPKGEPQWGDDDYVYVAPTDEFDIPF</code></pre>
+MTYYDADLGLVMCESELSLEILDALDWEHELPKGEPQWGDDDYVYVAPTDEFDIPF</pre>
       </li>
-      <br>
+
       <li>
-        <p>The tedious part - paste ||[Escherichia phage 4HA13] at the end of each fasta row</p>
-        <pre><code>>gp|AC4HA13|AC4HA13_%000||[Escherichia phage 4HA13]
+        <p>
+          The tedious part - paste ||[Escherichia phage 4HA13] at the end of
+          each fasta row
+        </p>
+        
+        <pre class="sequence-block">
+>gp|AC4HA13|AC4HA13_%000||[Escherichia phage 4HA13]
 MKPNYVAIRKSKEAMFHRFIEAKRKAELEGKVVIKKKKNKKKNYNIFFFLLSR
+
 >gp|AC4HA13|AC4HA13_%010||[Escherichia phage 4HA13]
-MTYYDADLGLVMCESELSLEILDALDWEHELPKGEPQWGDDDYVYVAPTDEFDIPF</code></pre>
+MTYYDADLGLVMCESELSLEILDALDWEHELPKGEPQWGDDDYVYVAPTDEFDIPF</pre>
       </li>
-      <br>
+
       <li>
-        <p>Paste this into Custom Data in <a href="http://binf.gmu.edu:8080/CoreGenes3.5/custdata.html" target="_blank">CoreGenes 3.5</a></p>
+        <p>
+          Paste this into Custom Data in
+          <a href="http://binf.gmu.edu:8080/CoreGenes3.5/custdata.html" target="_blank">CoreGenes 3.5</a>
+        </p>
       </li>
     </ol>
 
