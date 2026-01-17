@@ -1,140 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GenBank - Resource Hub</title>
-    <link rel="stylesheet" href="../style.css">
-    <!-- Google Custom Search Engine -->
-    <script async src="https://cse.google.com/cse.js?cx=5306da9863c9d4c77"></script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GenBank - Resource Hub</title>
+  <link rel="stylesheet" href="../style.css">
 
-  <body>
-    <header>
-      <div class="logo"><a href="../index.html">Resource Hub</a></div>
-      <nav>
-        <ul>
-          <!--new edit here-->
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../index.html#categories">Categories</a></li>
-          <li><a href="../aboutUs.html">About Us</a></li>
-        </ul>
-      </nav>
-      <div class="search-container">
-        <div class="gcse-search"></div>
-      </div>
-    </header>
+  <!-- Google Custom Search Engine -->
+  <script async src="https://cse.google.com/cse.js?cx=5306da9863c9d4c77"></script>
+</head>
 
-    <div class="breadcrumbs">
-      <a href="../index.html">Home</a> ›
-      <a href="../index.html#categories">Categories</a> ›
-      <span>GenBank</span>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../index.html">Resource Hub</a>
     </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#categories">Categories</a></li>
+        <li><a href="../aboutUs.html">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <div class="gcse-search"></div>
+    </div>
+  </header>
 
-    <main class="content">
-      <h1>Downloading Selected Sequences from GenBank</h1>
+  <div class="breadcrumbs">
+    <a href="../index.html">Home</a> ›
+    <a href="../index.html#categories">Categories</a> ›
+    <span>GenBank</span>
+  </div>
 
-      <!-- A. WHOLE GENOMES -->
-      <section class="tutorial-section">
-        <h2>A. Whole Genomes</h2>
-        <p>This can be accomplished in several ways:</p>
+  <main class="content">
+    <h1>Downloading Selected Sequences from GenBank</h1>
 
-        <h3>1. Downloading a single file</h3>
-        <ol type="i">
-          <li>
-            On the <a href="https://www.ncbi.nlm.nih.gov/" target="_blank">NCBI home page</a> choose "Nucleotide" or "Genome"
-            and paste in the accession number. Alternatively, type in the name and search.
-            It is sometimes useful to use the
-            <a href="https://www.ncbi.nlm.nih.gov/nuccore/advanced" target="_blank">Advanced Search Builder</a>.
-          </li>
+    <section class="tutorial-section">
+      <h2>A. Whole Genomes</h2>
+      <p>This can be accomplished in several ways:</p>
 
-          <li>
-            Choose the item that you are interested in and its format "FASTA" or "GenBank" and click on it.
-          </li>
+      <h3>1. Downloading a single file</h3>
+      <ol type="i">
+        <li>
+          On the <a href="https://www.ncbi.nlm.nih.gov/" target="_blank">NCBI home page</a>
+          choose "Nucleotide" or "Genome" and paste in the accession number.
+          Alternatively, type in the name and search. It is sometimes useful to
+          use the
+          <a href="https://www.ncbi.nlm.nih.gov/nuccore/advanced" target="_blank">Advanced Search Builder</a>.
+        </li>
 
-          <li>
-            There are two main ways of downloading the data:
-            <ul>
-              <li>(a) "Copy" and "Paste" into Notepad or a text editor and save in the appropriate file format; or,</li>
-              <li>(b) Choose "send to:" → "Choose Destination" → "File" and select either GenBank (full) or FASTA from the "Format" list.</li>
-            </ul>
-            Click "Create File" to download <code>sequence.gb</code> and <code>sequence.fasta</code> files, respectively.
-            <p><em>N.B.</em> The same can be done from the FASTA document in NCBI</p>
-          </li>
-        </ol>
+        <li>
+          Choose the item that you are interested in and its format "FASTA" or
+          "GenBank" and click on it.
+        </li>
 
-        <h3>2. Downloading multiple files</h3>
-        <ol type="i">
-          <li>
-            On the <a href="https://www.ncbi.nlm.nih.gov/" target="_blank">NCBI home page</a> choose "Nucleotide" or "Genome"
-            and paste in the required accession numbers (limit 100). Alternatively, typing in the name and search.
-            Again, the <a href="https://www.ncbi.nlm.nih.gov/nuccore/advanced" target="_blank">Advanced Search Builder</a> can be useful.
-          </li>
+        <li>
+          There are two main ways of downloading the data:
+          <ul>
+            <li>
+              (a) "Copy" and "Paste" into Notepad or a text editor and save in
+              the appropriate file format; or,
+            </li>
+            <li>
+              (b) Choose "send to:" → "Choose Destination" → "File" and select
+              either GenBank (full) or FASTA from the "Format" list.
+            </li>
+          </ul>
+          Click "Create File" to download <code>sequence.gb</code> and
+          <code>sequence.fasta</code> files, respectively.
+          <p><strong>N.B.</strong> The same can be done from the FASTA document in NCBI</p>
+        </li>
+      </ol>
 
-          <li>You can use the "send to:" command as in <strong>A.1.ii.</strong> to save all the sequences.</li>
+      <h3>2. Downloading multiple files</h3>
+      <ol type="i">
+        <li>
+          On the <a href="https://www.ncbi.nlm.nih.gov/" target="_blank">NCBI home page</a>
+          choose "Nucleotide" or "Genome" and paste in the required accession
+          numbers (limit 100). Alternatively, typing in the name and search.
+          Again, the
+          <a href="https://www.ncbi.nlm.nih.gov/nuccore/advanced" target="_blank">Advanced Search Builder</a>
+          can be useful.
+        </li>
 
-          <li>Alternatively, you can click on the boxes associated with the desired records to download a selected subset of data.</li>
-        </ol>
-      </section>
+        <li>
+          You can use the "send to:" command as in <strong>A.1.ii.</strong> to
+          save all the sequences.
+        </li>
 
-      <!-- B. SELECTED PROTEINS -->
-      <section class="tutorial-section">
-        <h2>B. Selected Proteins</h2>
+        <li>
+          Alternatively, you can click on the boxes associated with the desired
+          records to download a selected subset of data.
+        </li>
+      </ol>
+    </section>
 
-        <ol type="i">
-          <li>
-            You can approach the selection of a specific protein for downloading in much the same manner as described
-            for a GenBank flatfile (*.gbk) or fasta-formated nucleotide in the way described for genomes and nucleotides
-            as described above. Alternative, you can go to the Protein database and make your selection.
-          </li>
+    <section class="tutorial-section">
+      <h2>B. Selected Proteins</h2>
 
-          <li>
-            You may want to download the results of a BLASTp search for subsequent phylogenetic analysis. This can be
-            accomplished within the BLASTp search results by choosing "Select All" or selecting the boxes for the sequences
-            you are interested in.
-          </li>
+      <ol type="i">
+        <li>
+          You can approach the selection of a specific protein for downloading in
+          much the same manner as described for a GenBank flatfile (*.gbk) or
+          fasta-formated nucleotide in the way described for genomes and
+          nucleotides as described above. Alternative, you can go to the Protein
+          database and make your selection.
+        </li>
 
-          <li>
-            Select "Download" → choose "FASTA (complete sequence)" → click "Continue."
-            The downloaded file will be called <code>seqdump.txt</code>.
-          </li>
+        <li>
+          You may want to download the results of a BLASTp search for subsequent
+          phylogenetic analysis. This can be accomplished within the BLASTp
+          search results by choosing "Select All" or selecting the boxes for the
+          sequences you are interested in.
+        </li>
 
-          <li>Open the file in Notepad or another text editor.</li>
+        <li>
+          Select "Download" → choose "FASTA (complete sequence)" → click
+          "Continue." The downloaded file will be called <code>seqdump.txt</code>.
+        </li>
 
-          <li>
-            The data may look like the following:
-            <pre>
+        <li>Open the file in Notepad or another text editor.</li>
+
+        <li>
+          The data may look like the following:
+          <pre class="sequence-block">
 (a) single record:
 
 >ANJ65251.1 putative RNA polymerase 1 [Erwinia phage vB_EamP_Rexella]
 
-MDQLTEHQTRLEELFSNNQLMPRMRKEFTECESFDFTKYLEHKAIDVKFGIDLLVQMALHKRCDLQTL VGTLRHHCESAQEVVNNILKCAEADLVDYNVSLGIFIVRCTISNDV
-
-QEELDRFQYPLPMVVEPKKITNNKQSGYLLNNKSIILKDNHHEDDVCLDHINRLNKIKFRINFDTARMV KNEWRNLDKRKEGETQADFMKRKKAFEKYDSTARDVMEVLHKVS
-
-DTFHLTHSYDKRLRTYAQGYHVNYQGTAWNKAVIEFAEEEVTNG
+MDQLTEHQTRLEELFSNNQLMPRMRKEFTECESFDFTKYLEHKAIDVKFGIDLLVQMALHKRCDLQTLVGTLRHHCESAQEVVNNILKCA
+EADLVDYNVSLGIFIVRCTISNDVQEELDRFQYPLPMVVEPKKITNNKQSGYLLNNKSIILKDNHHEDDVCLDHINRLNKIKFRINFDTA
+RMVKNEWRNLDKRKEGETQADFMKRKKAFEKYDSTARDVMEVLHKVSDTFHLTHSYDKRLRTYAQGYHVNYQGTAWNKAVIEFAEEEVTNG
 
 
 (b) Multi-hit record:
 
 >YP_009286151.1 putative RNA polymerase 1 [Erwinia phage vB_EamP_Frozen]
-
 >ANJ65154.1 putative RNA polymerase 1 [Erwinia phage vB_EamP_Frozen]
-
 >ANJ65337.1 putative RNA polymerase 1 [Erwinia phage vB_EamP_Gutmeister]
 
-MDQLTEHQTRLEELFSNNQLMPRMRKEFTECESFDFTKYLEHKAIDVKFGIDLLVQMALHKRCDLQTL VGTLRHHCESAQEVVNNILKCAEADLVDYNVSLGIFIVRCTISNDV
+MDQLTEHQTRLEELFSNNQLMPRMRKEFTECESFDFTKYLEHKAIDVKFGIDLLVQMALHKRCDLQTLVGTLRHHCESAQEVVNNILKCA
+EADLVDYNVSLGIFIVRCTISNDVQEELDRFQYPLPMVVEPKKITNNKQSGYLLNNKSIILKDNHHEDDVCLDHINRLNKIKFRINFDTA
+RMVKNEWRNLDKRKEGETQADFIKRKKAFEKYDSTARDVMEVLHKVSDTFHLTHSYDKRLRTYAQGYHVNYQGTAWNKAVIEFAEEEVTNG
+          </pre>
+        </li>
 
-QEELDRFQYPLPMVVEPKKITNNKQSGYLLNNKSIILKDNHHEDDVCLDHINRLNKIKFRINFDTARMV KNEWRNLDKRKEGETQADFIKRKKAFEKYDSTARDVMEVLHKVSD
-
-DTFHLTHSYDKRLRTYAQGYHVNYQGTAWNKAVIEFAEEEVTNG
-            </pre>
-          </li>
-
-          <li>
-            Use your text editor to duplicate the latter record and remove nonessential test so that you end up with
-            a poly-fasta document in the following format:
-            <pre>
+        <li>
+          Use your text editor to duplicate the latter record and remove
+          nonessential test so that you end up with a poly-fasta document in the
+          following format:
+          <pre class="sequence-block">
 > ANJ65251
 
 MDQLTEHQTRLEELFSNNQLMPRMRKEFTECESFDFTKYLEHKAIDV etc
@@ -148,11 +164,11 @@ MDQLTEHQTRLEELFSNNQLMPRMRKEFTECESFDFTKYLEHKAIDV etc
 > ANJ65337
 
 MDQLTEHQTRLEELFSNNQLMPRMRKEFTECESFDFTKYLEHKAIDV etc
-            </pre>
+          </pre>
 
-            OR
+          OR
 
-            <pre>
+          <pre class="sequence-block">
 > Erwinia phage vB_EamP_Rexella
 
 MDQLTEHQTRLEELFSNNQLMPRMRKEFTECESFDFTKYLEHKAIDV etc
@@ -166,88 +182,99 @@ MDQLTEHQTRLEELFSNNQLMPRMRKEFTECESFDFTKYLEHKAIDV etc
 > Erwinia phage vB_EamP_Gutmeister
 
 MDQLTEHQTRLEELFSNNQLMPRMRKEFTECESFDFTKYLEHKAIDV etc
-            </pre>
-          </li>
-        </ol>
-      </section>
+          </pre>
+        </li>
+      </ol>
+    </section>
 
-      <!-- C. BIOEDIT -->
-      <section class="tutorial-section">
-        <h2>C. Using BioEdit to Edit File Formats</h2>
+    <section class="tutorial-section">
+      <h2>C. Using BioEdit to Edit File Formats</h2>
 
-        <ol type="i">
-          <li>Run <a href="http://www.google.com" target="_blank">BioEdit</a> and open <code>sequence.gb</code>.</li>
+      <ol type="i">
+        <li>
+          Run <a href="http://www.google.com" target="_blank">BioEdit</a> and
+          open <code>sequence.gb</code>.
+        </li>
 
-          <li>
-            The GenBank <strong>DEFINITION</strong> line will appear in the left column, and the associated sequence appears
-            in the right column.
-          </li>
+        <li>
+          The GenBank <strong>DEFINITION</strong> line will appear in the left
+          column, and the associated sequence appears in the right column.
+        </li>
 
-          <li>
-            You can change this to give the ACCESSION number by choosing "Edit" → "Select all sequences" →
-            under "Sequence" select "rename" → "with ACCESSION."
-            <p><em>N.B.</em> if you get >one accession number this may indicate that one of the sequences may have been replaced in GenBank.</p>
-          </li>
+        <li>
+          You can change this to give the ACCESSION number by choosing "Edit" →
+          "Select all sequences" → under "Sequence" select "rename" → "with
+          ACCESSION."
+          <p>
+            <em>N.B.</em> if you get >one accession number this may indicate
+            that one of the sequences may have been replaced in GenBank.
+          </p>
+        </li>
 
-          <li>In either of these cases place cursor in the left column and under "Edit" choose "Select All Sequences."</li>
+        <li>
+          In either of these cases place cursor in the left column and under
+          "Edit" choose "Select All Sequences."
+        </li>
 
-          <li>
-            <strong>To Export to Excel:</strong><br>
-            Choose "Edit" → "Export" → "tab-delimited text" → save as *.tab.<br>
-            Then open the file in Excel → "Delimited" → "Next" → "Finish."<br>
-            This will give Column A = names, Column B = sequences.
-          </li>
+        <li>
+          <strong>To Export to Excel:</strong><br>
+          Choose "Edit" → "Export" → "tab-delimited text" → save as *.tab.<br>
+          Then open the file in Excel → "Delimited" → "Next" → "Finish."<br>
+          This will give Column A = names, Column B = sequences.
+        </li>
 
-          <li>
-            <strong>To Export as Individual Files:</strong><br>
-            Under "File" choose "Export" → "split into individual fasta files."<br>
-            Save the files in a new folder.
-            <p><em>Warning:</em> Names may be too similar (example: Acinetobacter phage YMC11/12/R1215) files may not be generated.</p>
-          </li>
-        </ol>
-      </section>
+        <li>
+          <strong>To Export as Individual Files:</strong><br>
+          Under "File" choose "Export" → "split into individual fasta files."<br>
+          Save the files in a new folder.
+          <p>
+            <em>Warning:</em> Names may be too similar (example: Acinetobacter
+            phage YMC11/12/R1215) files may not be generated.
+          </p>
+        </li>
+      </ol>
+    </section>
 
-      <!-- D. EMBOSS -->
-      <section class="tutorial-section">
-        <h2>D. Splitting Poly-Fasta Protein Files using EMBOSS Explorer seqretsplit</h2>
+    <section class="tutorial-section">
+      <h2>D. Splitting Poly-Fasta Protein Files using EMBOSS Explorer seqretsplit</h2>
 
-        <ol type="i">
-          <li>
-            EMBOSS seqretsplit can be accessed
-            <a href="https://www.bioinformatics.nl/cgi-bin/emboss/seqretsplit" target="_blank">here</a> or
-            <a href="http://www.google.com" target="_blank">here</a>.
-          </li>
+      <ol type="i">
+        <li>
+          EMBOSS seqretsplit can be accessed
+          <a href="https://www.bioinformatics.nl/cgi-bin/emboss/seqretsplit" target="_blank">here</a>
+          or <a href="http://www.google.com" target="_blank">here</a>.
+        </li>
 
-          <li>
-            Upload your <code>seqdump.txt</code> or <code>sequence.fasta</code> file and leave
-            "Output sequence format" as default "Pearson FASTA".
-          </li>
+        <li>
+          Upload your <code>seqdump.txt</code> or <code>sequence.fasta</code>
+          file and leave "Output sequence format" as default "Pearson FASTA".
+        </li>
 
-          <li>
-            When the results come up in your Internet browser search for the fasta symbol (>) and right click to download
-            the separate files. These will be identified by their accession numbers.
-            Unfortunately, the latter are named ab123456.fasta and not AB123456.fasta.
-          </li>
-        </ol>
-      </section>
+        <li>
+          When the results come up in your Internet browser search for the fasta
+          symbol (>) and right click to download the separate files. These will
+          be identified by their accession numbers. Unfortunately, the latter are
+          named ab123456.fasta and not AB123456.fasta.
+        </li>
+      </ol>
+    </section>
 
-      <!-- E. GENBANK FLATFILES -->
-      <section class="tutorial-section">
-        <h2>E. Extract Protein Sequences from GenBank Flatfiles</h2>
+    <section class="tutorial-section">
+      <h2>E. Extract Protein Sequences from GenBank Flatfiles</h2>
 
-        <ol type="i">
-          <li>
-            Use the Rocap
-            <a href="http://www.google.com" target="_blank">
-              Genbank/EMBL to FASTA Conversion Tool
-            </a>
-            to convert GenBank flat file (*.gbk) into fasta-formatted amino acid sequence file (*.faa).
-          </li>
-        </ol>
-      </section>
+      <ol type="i">
+        <li>
+          Use the Rocap
+          <a href="http://www.google.com" target="_blank">
+            Genbank/EMBL to FASTA Conversion Tool
+          </a>
+          to convert GenBank flat file (*.gbk) into fasta-formatted amino acid sequence file (*.faa).
+        </li>
+      </ol>
+    </section>
 
-      <p class="updated"><strong>Updated:</strong> November, 2025</p>
-    </main>
+    <p class="updated"><strong>Updated:</strong> November, 2025</p>
+  </main>
 
   <footer>
     <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to top">Back to Top</button>
@@ -256,5 +283,5 @@ MDQLTEHQTRLEELFSNNQLMPRMRKEFTECESFDFTKYLEHKAIDV etc
     </p>
     <p>© 2026 Internet Resources for Molecular Biologists</p>
   </footer>
-  </body>
+</body>
 </html>
