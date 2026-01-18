@@ -1,0 +1,27 @@
+ Conversion of gbk genome data into a form compatable with CoreGenes
+
+1. The first step is to extract the proteins from the gbk file.  For this I use Genome2D resulting in the following type of
+results for phage 4HA13 (locus tag AC4HA13):
+
+>AC4HA13_000
+MKPNYVAIRKSKEAMFHRFIEAKRKAELEGKVVIKKKKKNKKKNYNIFFFLLSR
+>AC4HA13_010
+MTYYDADLGLVMCESELSLEIDALDWEHELPKGEPQWGDDDYVYVAPTDEFDIPF
+
+2. Copy and paste these into Notepad.
+3. Check for spurious characters and deleted them.  I sometimes find quotation marks (").
+4. Using the Replace feature of Notepad to replace >AC4HA13 with >gp|AC4HA13|AC4HA13_% giving:
+
+>gp|AC4HA13|AC4HA13_%000
+MKPNYVAIRKSKEAMFHRFIEAKRKAELEGKVVIKKKKKNKKKNYNIFFFLLSR
+>gp|AC4HA13|AC4HA13_%010
+MTYYDADLGLVMCESELSLEIDALDWEHELPKGEPQWGDDDYVYVAPTDEFDIPF
+
+5. The tedious part - paste |[Escherichia phage 4HA13] at the end of each fasta row
+
+>gp|AC4HA13|AC4HA13_%000|[Escherichia phage 4HA13]
+MKPNYVAIRKSKEAMFHRFIEAKRKAELEGKVVIKKKKKNKKKNYNIFFFLLSR
+>gp|AC4HA13|AC4HA13_%010|[Escherichia phage 4HA13]
+MTYYDADLGLVMCESELSLEIDALDWEHELPKGEPQWGDDDYVYVAPTDEFDIPF
+
+6. Paste this into Custom Data in CoreGenes 3.5
