@@ -1,27 +1,107 @@
- Conversion of gbk genome data into a form compatable with CoreGenes
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genome Comparisons and Synteny Instructions - Resource Hub</title>
+  <link rel="stylesheet" href="../../../style.css">
+  <!-- Google Custom Search Engine -->
+  <script async src="https://cse.google.com/cse.js?cx=5306da9863c9d4c77"></script>
+</head>
 
-1. The first step is to extract the proteins from the gbk file.  For this I use Genome2D resulting in the following type of
-results for phage 4HA13 (locus tag AC4HA13):
+<body>
+  <header>
+    <div class="logo">
+      <a href="../../../index.html">Resource Hub</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../../../index.html#categories">Categories</a></li>
+        <li><a href="../../../aboutUs.html">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <div class="gcse-search"></div>
+    </div>
+  </header>
 
+  <div class="breadcrumbs">
+    <a href="../../../index.html">Home</a> › 
+    <a href="../../../index.html#categories">Categories</a> › 
+    <a href="../GenomicsHome.html">Genomics</a> › 
+    <a href="../GenomeComparisonsAndSynteny.html">Genome Comparisons and Synteny</a> › 
+    <span>Instructions</span>
+  </div>
+
+  <main class="content">
+    <h1>Conversion of gbk Genome Data for CoreGenes</h1>
+
+    <section class="tutorial-section">
+      <h3>Step 1: Extract Proteins from gbk File</h3>
+      <p>
+        The first step is to extract the proteins from the gbk file. For this I use 
+        <a href = "http://genome2d.molgenrug.nl/g2d_tools_conversions.html" target="_blank">Genome2D</a> 
+        resulting in the following type of results for phage 4HA13 (locus tag AC4HA13):
+      </p>
+
+      <pre class="sequence-block">
 >AC4HA13_000
 MKPNYVAIRKSKEAMFHRFIEAKRKAELEGKVVIKKKKKNKKKNYNIFFFLLSR
 >AC4HA13_010
 MTYYDADLGLVMCESELSLEIDALDWEHELPKGEPQWGDDDYVYVAPTDEFDIPF
+      </pre>
+    </section>
 
-2. Copy and paste these into Notepad.
-3. Check for spurious characters and deleted them.  I sometimes find quotation marks (").
-4. Using the Replace feature of Notepad to replace >AC4HA13 with >gp|AC4HA13|AC4HA13_% giving:
+    <section class="tutorial-section">
+      <h3>Step 2: Copy to Notepad</h3>
+    </section>
 
+    <section class="tutorial-section">
+      <h3>Step 3: Check for Spurious Characters</h3>
+    </section>
+
+    <section class="tutorial-section">
+      <h3>Step 4: Use Replace Feature</h3>
+      <p>
+        Using the Replace feature of Notepad to replace <code>>AC4HA13</code> with 
+        <code>>gp|AC4HA13|AC4HA13_%</code> giving:
+      </p>
+      <pre class="sequence-block">
 >gp|AC4HA13|AC4HA13_%000
 MKPNYVAIRKSKEAMFHRFIEAKRKAELEGKVVIKKKKKNKKKNYNIFFFLLSR
 >gp|AC4HA13|AC4HA13_%010
-MTYYDADLGLVMCESELSLEIDALDWEHELPKGEPQWGDDDYVYVAPTDEFDIPF
+MTYYDADLGLVMCESELSLEIDALDWEHELPKGEPQWGDDDYVYVAPTDEFDIPF</pre>
+    </section>
 
-5. The tedious part - paste |[Escherichia phage 4HA13] at the end of each fasta row
-
+    <section class="tutorial-section">
+      <h3>Step 5: Add Organism Information</h3>
+      <p>
+        The tedious part - paste <code>|[Escherichia phage 4HA13]</code> at the end of 
+        each fasta row:
+      </p>
+      <pre class="sequence-block">
 >gp|AC4HA13|AC4HA13_%000|[Escherichia phage 4HA13]
 MKPNYVAIRKSKEAMFHRFIEAKRKAELEGKVVIKKKKKNKKKNYNIFFFLLSR
 >gp|AC4HA13|AC4HA13_%010|[Escherichia phage 4HA13]
-MTYYDADLGLVMCESELSLEIDALDWEHELPKGEPQWGDDDYVYVAPTDEFDIPF
+MTYYDADLGLVMCESELSLEIDALDWEHELPKGEPQWGDDDYVYVAPTDEFDIPF</pre>
+    </section>
 
-6. Paste this into Custom Data in CoreGenes 3.5
+    <section class="tutorial-section">
+      <h3>Step 6: Paste into CoreGenes</h3>
+      <p>Paste this formatted data into Custom Data in <a href = "http://binf.gmu.edu:8080/CoreGenes3.5/custdata.html" target="_blank">CoreGenes 3.5</a></p>
+    </section>
+
+    <p class="updated"><strong>Updated:</strong> January, 2026</p>
+  </main>
+
+  <footer>
+    <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to top">Back to Top</button>
+    <p class="credits">
+      Designed and developed by <strong>Um-e-Kalsoum Asif</strong>
+    </p>
+    <p>© 2026 Internet Resources for Molecular Biologists</p>
+  </footer>
+
+</body>
+</html>
